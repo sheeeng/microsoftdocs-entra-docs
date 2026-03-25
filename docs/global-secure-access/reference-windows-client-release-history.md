@@ -21,18 +21,18 @@ You can download the current version of the Global Secure Access client from the
 :::image type="content" source="media/reference-windows-client-release-history/client-download-screen.png" alt-text="Screenshot of the client download screen with the Download Client button highlighted.":::
 
 ## Version 2.28.94
-Released for download on March XX, 2026.
+Released for download on March 30, 2026.
 ### Functional changes
-- The sign out button is shown by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and can be shown by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
+- The sign out button shows by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and you can show it by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
 - The sign out button changed its location in the user interface. It's no longer available in the system tray menu, but in the account control in the main Global Secure Access client window.
 - A user can sign out from the Global Secure Access client and sign in as a different user in a different tenant onboarded to Global Secure Access.
 - Support for logging the device join type in the traffic logs in the Microsoft Entra portal.
-- Enhancement to Intelligent Local Access – supports the ability to assign (in the portal) a Private Application to multiple Private Networks.
-- Enhancement to Intelligent Local Access – added Private Networks section to the Forwarding Profile tab in the advanced diagnostics tool.
+- Enhancement to Intelligent Local Access: supports the ability to assign (in the portal) a private application to multiple private networks.
+- Enhancement to Intelligent Local Access: adds **Private Networks** section to the **Forwarding profile** tab in the **Advanced diagnostics** tool.
 ### Other changes
-- Internal Internet connection test no longer requires access to msn.com (removing a requirement that was introduced in 2.26.108).
+- Internal internet connection test no longer requires access to `msn.com`. This change removes a dependency on an external website introduced in version 2.26.108.
 - Advanced log collection includes Kerberos logs and the output of gpresult.
-- Log collection includes the list of the device's root CAs.
+- Log collection includes the list of the device's root Certificate Authorities (CAs).
 - New telemetries are available.
 - Miscellaneous bug fixes and improvements.
 
@@ -139,7 +139,7 @@ Released for download on November 26, 2024.
 > The mTLS connection gradually rolls out to customers through the cloud service. Customers continue to use the Transport Layer Security (TLS) connection until they receive mTLS.
 - Adds support for restricting nonprivileged users from disabling and enabling the Global Secure Access client on their device.
 - Shows health check tests when loading a log zip file to Advanced diagnostics.
-- Adds support for the Hyper-V internal switch: the Global Secure Access client installed on the host bypasses network traffic from Hyper-V guest machines. If needed, the Global Secure Access client can be installed on the guest machine, on the host machine, or both. 
+- Adds support for the Hyper-V internal switch: the Global Secure Access client installed on the host bypasses network traffic from Hyper-V guest machines. If needed, you can install the Global Secure Access client on the guest machine, on the host machine, or both. 
 > [!NOTE]
 > The Global Secure Access client doesn't support host machines with a Hyper-V external virtual switch.
 - Triggers the forwarding profile update when a user signs in to Windows.
