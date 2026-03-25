@@ -2,7 +2,7 @@
 title: Global Secure Access Client for Windows Release Notes
 description: This article tracks the changes in each released version of the Global Secure Access client for Windows.
 ms.topic: reference
-ms.date: 02/09/2026
+ms.date: 03/25/2026
 ms.author: jayrusso
 author: HULKsmashGithub
 ms.reviewer: lirazbarak
@@ -19,6 +19,22 @@ You can download the current version of the Global Secure Access client from the
 1. Browse to **Global Secure Access** > **Connect** > **Client download**.
 1. Select **Download Client**.
 :::image type="content" source="media/reference-windows-client-release-history/client-download-screen.png" alt-text="Screenshot of the client download screen with the Download Client button highlighted.":::
+
+## Version 2.28.94
+Released for download on March XX, 2026.
+### Functional changes
+- The sign out button is shown by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and can be shown by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
+- The sign out button changed its location in the user interface. It's no longer available in the system tray menu, but in the account control in the main Global Secure Access client window.
+- A user can sign out from the Global Secure Access client and sign in as a different user in a different tenant onboarded to Global Secure Access.
+- Support for logging the device join type in the traffic logs in the Microsoft Entra portal.
+- Enhancement to Intelligent Local Access – supports the ability to assign (in the portal) a Private Application to multiple Private Networks.
+- Enhancement to Intelligent Local Access – added Private Networks section to the Forwarding Profile tab in the advanced diagnostics tool.
+### Other changes
+- Internal Internet connection test no longer requires access to msn.com (removing a requirement that was introduced in 2.26.108).
+- Advanced log collection includes Kerberos logs and the output of gpresult.
+- Log collection includes the list of the device's root CAs.
+- New telemetries are available.
+- Miscellaneous bug fixes and improvements.
 
 ## Version 2.26.108
 Released for download on February 9, 2026.
