@@ -18,7 +18,7 @@ You can create unique authentication experiences for applications in your tenant
 This article describes how you can create multiple branding themes for different applications in your tenant.
 
 > [!IMPORTANT]
-> For Microsoft Entra ID tenants, branding themes is in preview. For external tenants, branding themes is generally available. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+> For external tenants, branding themes is generally available. For Microsoft Entra ID tenants, branding themes is in PREVIEW. This information relates to a prerelease product that may be substantially modified before it's released. Microsoft makes no warranties, expressed or implied, with respect to the information provided here.
 
 ## Prerequisites
 
@@ -69,7 +69,7 @@ Here are some important things to know about how branding themes work.
 
 Here are some of the limits and constraints for branding themes.
 
-- You can create up to 10 branding themes per Microsoft Entra ID tenant or up to 5 branding themes per external tenant.
+- You can create up to 5 branding themes per external tenant or up to 10 branding themes per Microsoft Entra ID tenant.
 - The live preview capability previews style and layout changes and only shows the Sign in page. Live preview doesn't include any custom text overrides.
 - You can't use the name **Default theme** for your branding theme name. This name is reserved.
 - Custom text changes are currently limited to sign-in page only.
