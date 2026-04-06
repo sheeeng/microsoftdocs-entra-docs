@@ -365,7 +365,7 @@ items:
         - name: Language-specific branding
           href: how-to-customize-languages-customers.md
       - name: Branding themes
-        href: how-to-customize-branding-themes-apps.md
+        href: ~/fundamentals/how-to-customize-branding-themes-apps.md
     - name: Customize attribute collection
       items:
         - name: Collect custom user attributes during sign-up

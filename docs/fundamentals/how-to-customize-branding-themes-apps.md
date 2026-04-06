@@ -1,18 +1,17 @@
 ---
-title: Customize the sign-in experience for your application with branding themes in external tenants
-description: Learn about how to create branding themes and apply them to the sign-in experience for your application in Microsoft External ID for external tenants.
+title: Customize the sign-in experience for your application with branding themes
+description: Learn how to create branding themes and apply them to the sign-in experience for your application in Microsoft Entra ID.
 author: rolyon
 ms.author: rolyon
-ms.date: 01/29/2026
+ms.date: 04/06/2026
 ms.reviewer: 
 ms.topic: how-to
+ai-usage: ai-assisted
 #Customer intent: As a developer integrating with Microsoft Entra ID, I want to customize the sign-in experience for my application.
 
 ---
 
-# Customize the sign-in experience for your application with branding themes in external tenants
-
-[!INCLUDE [applies-to-external-only](../includes/applies-to-external-only.md)]
+# Customize the sign-in experience for your application with branding themes
 
 You can create unique authentication experiences for applications in your tenant. Each application can have its own theme that you can customize with a background image or color, favicon, layout, header, and footer. This customization overrides any configurations made to the default branding. If you don't make any changes to the elements, the default elements are displayed.
 
@@ -20,9 +19,10 @@ This article describes how you can create multiple branding themes for different
 
 ## Prerequisites
 
-- Have at least the [Organizational Branding Administrator](../../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) role.
-- Have at least the [Application Administrator](../../identity/role-based-access-control/permissions-reference.md#application-administrator) role for applications that you want to apply a theme to.
-- A registered application in your tenant. If you haven't registered an application yet, see [Register an application](../../identity-platform/quickstart-register-app.md).
+- An [Microsoft Entra ID P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing) or a [Microsoft 365 Business Standard license](https://www.microsoft.com/microsoft-365/business/compare-all-plans) for workforce tenants.
+- Have at least the [Organizational Branding Administrator](../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) role.
+- Have at least the [Application Administrator](../identity/role-based-access-control/permissions-reference.md#application-administrator) role for applications that you want to apply a theme to.
+- A registered application in your tenant. If you haven't registered an application yet, see [Register an application](../identity-platform/quickstart-register-app.md).
 - Review the file size requirements for each image you want to add. Use a photo editor if needed to create correctly sized and formatted images: PNG, JPG, or JPEG with image size 245x36px and maximum file size 10KB.
 
 ## Branding theme properties
@@ -74,7 +74,7 @@ Here are some of the limits and constraints for branding themes.
 
 ## Create a new theme
 
-1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as [Organizational Branding Administrator](../../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) and [Application Administrator](../../identity/role-based-access-control/permissions-reference.md#application-administrator).
+1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com/) as [Organizational Branding Administrator](../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) and [Application Administrator](../identity/role-based-access-control/permissions-reference.md#application-administrator).
 
 1. Browse to **Entra ID** > **Custom branding**.
 
@@ -110,7 +110,7 @@ Here are some of the limits and constraints for branding themes.
    - **Banner logo** – Displays on the sign-in page and in the user's access panel.
    - **Square logo (light theme)** – Represents user accounts in your tenant.
    - **Square logo (dark theme)** – If the light theme square logo displays poorly on dark backgrounds, you can upload a logo to be used in its place when dark backgrounds are used.
-   - **Custom CSS** – Upload your own CSS file to replace default Microsoft styling with your own styling for: color, font, text size, position of elements, and displays for different devices and screen sizes. For more information, see [CSS template reference guide](../../fundamentals/reference-company-branding-css-template.md).
+   - **Custom CSS** – Upload your own CSS file to replace default Microsoft styling with your own styling for: color, font, text size, position of elements, and displays for different devices and screen sizes. For more information, see [CSS template reference guide](reference-company-branding-css-template.md).
      
     :::image type="content" source="./media/how-to-customize-branding-themes-apps/styling-tab.png" alt-text="Screenshot of the Create a theme page and the Styling tab settings." lightbox="./media/how-to-customize-branding-themes-apps/styling-tab.png":::
 
@@ -240,4 +240,5 @@ In this section, you add a language to a theme.
 
 ## Related content
 
-- [Configure your company branding](../../fundamentals/how-to-customize-branding.md)
+- [Configure your company branding](how-to-customize-branding.md)
+- [Customize the neutral branding in your external tenant](../external-id/customers/how-to-customize-branding-customers.md)
