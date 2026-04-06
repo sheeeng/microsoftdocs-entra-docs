@@ -17,9 +17,12 @@ You can create unique authentication experiences for applications in your tenant
 
 This article describes how you can create multiple branding themes for different applications in your tenant.
 
+> [!IMPORTANT]
+> For Microsoft Entra ID tenants, branding themes is in preview. For external tenants, branding themes is generally available. See the [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms/) for legal terms that apply to Azure features that are in beta, preview, or otherwise not yet released into general availability.
+
 ## Prerequisites
 
-- An [Microsoft Entra ID P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing) or a [Microsoft 365 Business Standard license](https://www.microsoft.com/microsoft-365/business/compare-all-plans) for workforce tenants.
+- An [Microsoft Entra ID P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing) for Microsoft Entra ID tenants.
 - Have at least the [Organizational Branding Administrator](../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) role.
 - Have at least the [Application Administrator](../identity/role-based-access-control/permissions-reference.md#application-administrator) role for applications that you want to apply a theme to.
 - A registered application in your tenant. If you haven't registered an application yet, see [Register an application](../identity-platform/quickstart-register-app.md).
@@ -66,7 +69,7 @@ Here are some important things to know about how branding themes work.
 
 Here are some of the limits and constraints for branding themes.
 
-- You can create up to 5 branding themes per tenant.
+- You can create up to 10 branding themes per Microsoft Entra ID tenant or up to 5 branding themes per external tenant.
 - The live preview capability previews style and layout changes and only shows the Sign in page. Live preview doesn't include any custom text overrides.
 - You can't use the name **Default theme** for your branding theme name. This name is reserved.
 - Custom text changes are currently limited to sign-in page only.
