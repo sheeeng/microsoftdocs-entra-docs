@@ -57,7 +57,7 @@ The objective of this section is to outline how to enable user provisioning of A
 
 1. Select **+ New configuration**.
 
-    ![Screenshot of the Provisioning tab for DocuSign in Azure portal. Provisioning Mode is set to Automatic and Admin Username, Password and Test Connection are highlighted.](./media/docusign-provisioning-tutorial/provisioning.png)
+    ![Screenshot of Provisioning tab automatic](common/provisioning-automatic.png)
 
 1. In the **Tenant URL** field, input your DocuSign Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to DocuSign. If the connection fails, ensure your DocuSign account has the required admin permissions and try again.
 

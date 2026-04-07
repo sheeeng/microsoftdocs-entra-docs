@@ -79,7 +79,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **+ New configuration**.
 
-	![Screenshot of Provisioning tab automatic](common/provisioning-automatic.png)
+	![Screenshot of Provisioning tab automatic](common/application-provisioning.png)
 
 1. In the **Tenant URL** field, input your directprint Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to directprint. If the connection fails, ensure your directprint account has the required admin permissions and try again.
 

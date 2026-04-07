@@ -76,7 +76,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **+ New configuration**.
 
-	![Screenshot of Provisioning tab automatic](common/provisioning-automatic.png)
+	![Screenshot of Provisioning tab automatic](common/application-provisioning.png)
 
 1. In the **Tenant URL** field, input your Documo Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Documo. If the connection fails, ensure your Documo account has the required admin permissions and try again.
 	 
