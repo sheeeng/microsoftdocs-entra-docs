@@ -6,7 +6,6 @@ ms.author: rolyon
 ms.date: 04/06/2026
 ms.reviewer: 
 ms.topic: how-to
-ai-usage: ai-assisted
 #Customer intent: As a developer integrating with Microsoft Entra ID, I want to customize the sign-in experience for my application.
 
 ---
@@ -22,7 +21,7 @@ This article describes how you can create multiple branding themes for different
 
 ## Prerequisites
 
-- An [Microsoft Entra ID P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing) for Microsoft Entra ID tenants.
+- For external tenants, there isn't a license requirement. For Microsoft Entra ID tenants, you must have an [Microsoft Entra ID P1 or P2 license](https://www.microsoft.com/security/business/microsoft-entra-pricing).
 - Have at least the [Organizational Branding Administrator](../identity/role-based-access-control/permissions-reference.md#organizational-branding-administrator) role.
 - Have at least the [Application Administrator](../identity/role-based-access-control/permissions-reference.md#application-administrator) role for applications that you want to apply a theme to.
 - A registered application in your tenant. If you haven't registered an application yet, see [Register an application](../identity-platform/quickstart-register-app.md).
