@@ -2,7 +2,7 @@
 title: Global Secure Access Client for Windows Release Notes
 description: This article tracks the changes in each released version of the Global Secure Access client for Windows.
 ms.topic: reference
-ms.date: 03/25/2026
+ms.date: 04/10/2026
 ms.author: jayrusso
 author: HULKsmashGithub
 ms.reviewer: lirazbarak
@@ -18,19 +18,20 @@ You can download the current version of the Global Secure Access client from the
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as a [Global Secure Access Administrator](/azure/active-directory/roles/permissions-reference#global-secure-access-administrator).
 1. Browse to **Global Secure Access** > **Connect** > **Client download**.
 1. Select **Download Client**.
-:::image type="content" source="media/reference-windows-client-release-history/client-download-screen.png" alt-text="Screenshot of the client download screen with the Download Client button highlighted.":::
+:::image type="content" source="media/reference-windows-client-release-history/client-download-screen.png" alt-text="Screenshot of the client download screen with the Download Client button highlighted." lightbox="media/reference-windows-client-release-history/client-download-screen.png":::
 
 ## Version 2.28.94
-Released for download on March 30, 2026.
+Released for download on April 11, 2026.
 ### Functional changes
-- The sign out button shows by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and you can show it by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
-- The sign out button changed its location in the user interface. It's no longer available in the system tray menu, but in the account control in the main Global Secure Access client window.
+- The **Sign Out** button shows by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and you can show it by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
+- The **Sign Out** button is now in the user interface in the account control in the main Global Secure Access client window. It's no longer available in the system tray menu.
 - A user can sign out from the Global Secure Access client and sign in as a different user in a different tenant onboarded to Global Secure Access.
-- Traffic logs in the Microsoft Entra admin center include the device join type.
+- When the client is signed out, the **Sign In** button replaces **Sign Out** in the account control in the main Global Secure Access client window.
+- Traffic logs in the Microsoft Entra admin center include the device join type, cross-tenant access type, and home tenant ID.
 - Enhancement to Intelligent Local Access: supports the ability to assign (in the portal) a private application to multiple private networks.
 - Enhancement to Intelligent Local Access: adds **Private Networks** section to the **Forwarding profile** tab in the **Advanced diagnostics** tool.
 ### Other changes
-- Internal internet connection test no longer requires access to `msn.com`. This change removes a dependency on an external website introduced in version 2.26.108.
+- Internal internet connection test no longer requires access to `msn.com` (this change removes a dependency on an external website introduced in version 2.26.108). Note: the connection test still requires access to `www.msftconnecttest.com`.
 - Advanced log collection includes Kerberos logs and the output of `gpresult`.
 - Log collection includes the list of the device's root Certificate Authorities (CAs).
 - New telemetries are available.
