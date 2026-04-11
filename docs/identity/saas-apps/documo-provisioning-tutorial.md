@@ -79,8 +79,6 @@ This section guides you through the steps to configure the Microsoft Entra provi
 	![Screenshot of Provisioning tab automatic](common/application-provisioning.png)
 
 1. In the **Tenant URL** field, input your Documo Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Documo. If the connection fails, ensure your Documo account has the required admin permissions and try again.
-	 
-	* In the **Secret Token** field, copy and paste the API key you prepared in Step 2. Select **Test Connection** to ensure Microsoft Entra ID can connect to Documo. If the connection fails, ensure your Documo account has Admin permissions and try again.
 
 	![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
@@ -90,7 +88,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the **Edit** icon to edit the properties. Enable notification emails and provide an email to receive quarantine notifications. Enable **Accidental deletions prevention**. Select **Apply** to save the changes.
 
-1. 1. In the **Notification Email** field, enter the email address of a person who should receive the provisioning error notifications and select the **Send an email notification when a failure occurs** check box.
+1. In the **Notification Email** field, enter the email address of a person who should receive the provisioning error notifications and select the **Send an email notification when a failure occurs** check box.
 
    ![Screenshot of Provisioning properties.](common/provisioning-properties.png)
 

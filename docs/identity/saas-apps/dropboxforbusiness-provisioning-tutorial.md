@@ -89,7 +89,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 	![Screenshot of Dropbox for Business sign-in](media/dropboxforbusiness-provisioning-tutorial/dropbox01.png)
 
-1. Upon completing steps 5 and 6, select **Test Connection** to ensure Microsoft Entra ID can connect to Dropbox for Business. If the connection fails, ensure your Dropbox for Business account has Admin permissions and try again.
+1. Select **Test Connection** to ensure Microsoft Entra ID can connect to Dropbox for Business. If the connection fails, ensure your Dropbox for Business account has Admin permissions and try again.
 
 	![Screenshot of Token](common/provisioning-testconnection-oauth.png)
 
@@ -99,7 +99,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the **Edit** icon to edit the properties. Enable notification emails and provide an email to receive quarantine notifications. Enable **Accidental deletions prevention**. Select **Apply** to save the changes.
 
-10. 1. In the **Notification Email** field, enter the email address of a person who should receive the provisioning error notifications and select the **Send an email notification when a failure occurs** check box.
+1. In the **Notification Email** field, enter the email address of a person who should receive the provisioning error notifications and select the **Send an email notification when a failure occurs** check box.
 
    ![Screenshot of Provisioning properties.](common/provisioning-properties.png)
 
@@ -111,7 +111,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **Attribute Mapping** in the left panel and select **Groups**.
 
-13. Review the group attributes that are synchronized from Microsoft Entra ID to Dropbox in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the groups in Dropbox for update operations. Select the **Save** button to commit any changes.
+1. Review the group attributes that are synchronized from Microsoft Entra ID to Dropbox in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the groups in Dropbox for update operations. Select the **Save** button to commit any changes.
 
 	![Screenshot of Dropbox Group Attributes](media/dropboxforbusiness-provisioning-tutorial/dropbox-group-attributes.png)
 
