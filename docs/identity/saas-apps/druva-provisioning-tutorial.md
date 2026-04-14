@@ -46,15 +46,15 @@ Before configuring Druva for automatic user provisioning with Microsoft Entra ID
 
     ![Screenshot of Druva Admin Console](media/druva-provisioning-tutorial/menubar.png)
 
-2. Navigate to **Manage** > **Deployments** > **Users**.
+1. Navigate to **Manage** > **Deployments** > **Users**.
 
     :::image type="content" source="media/druva-provisioning-tutorial/manage.png" alt-text="Screenshot of the Druva admin console. Manage is highlighted, and the Manage menu is visible. In that menu, under Deployments, Users are highlighted." border="false":::
 
-3. Navigate to **Settings**. Select **Generate Token**.
+1. Navigate to **Settings**. Select **Generate Token**.
 
     :::image type="content" source="media/druva-provisioning-tutorial/settings.png" alt-text="Screenshot of a page in the Druva admin console. Settings are highlighted, and the Settings tab is open. The Generate token button is highlighted." border="false":::
 
-4. Copy the **Auth token** value. This value is entered in the **Secret Token** field in the Provisioning tab of your Druva application.
+1. Copy the **Auth token** value. This value is entered in the **Secret Token** field in the Provisioning tab of your Druva application.
 
     :::image type="content" source="media/druva-provisioning-tutorial/auth.png" alt-text="Screenshot of the Create token page in the Druva admin console. A link labeled Copy Token is available for copying the Auth token value." border="false":::
 
@@ -118,6 +118,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
     ![Screenshot of Druva User Attributes](media/druva-provisioning-tutorial/userattribute.png)
 
+1. To configure scoping filters, refer to the instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
 1. To configure scoping filters, refer to the instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
