@@ -1,21 +1,14 @@
 ---
-title: Microsoft Entra single sign-on (SSO) integration with Lenses.io
+title: Configure Lenses.io for Single sign-on with Microsoft Entra ID
 description: In this article,  you learn how to configure single sign-on between Microsoft Entra ID and Lenses.io.
 
-author: nguhiu
-manager: CelesteDG
 ms.reviewer: celested
-ms.service: entra-id
-ms.subservice: saas-apps
-
 ms.topic: how-to
 ms.date: 03/25/2025
-ms.author: gideonkiratu
-
 # Customer intent: As an IT administrator, I want to learn how to configure single sign-on between Microsoft Entra ID and Lenses.io so that I can control who has access to Lenses.io, enable automatic sign-in with Microsoft Entra accounts, and manage my accounts in one central location.
 ---
 
-# Microsoft Entra single sign-on (SSO) integration with the Lenses.io DataOps portal
+# Configure Lenses.io for Single sign-on with Microsoft Entra ID
 
 In this article,  you learn how to integrate the [Lenses.io](https://lenses.io/) DataOps portal with Microsoft Entra ID. After you integrate Lenses.io with Microsoft Entra ID, you can:
 
@@ -25,6 +18,7 @@ In this article,  you learn how to integrate the [Lenses.io](https://lenses.io/)
 
 ## Prerequisites
 The scenario outlined in this article assumes that you already have the following prerequisites:
+
 [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
 * An instance of a Lenses portal. You can choose from a number of [deployment options](https://lenses.io/product/deployment/).
 * A Lenses.io [license](https://lenses.io/product/pricing/) that supports single sign-on (SSO).
@@ -86,7 +80,7 @@ Follow these steps to enable Microsoft Entra SSO in the Azure portal:
     c. **Sign on URL**: Enter a URL that has the following pattern: `https://<CUSTOMER_LENSES_BASE_URL>`. An example is `https://lenses.my.company.com`.
 
     > [!NOTE]
-    > These values aren't real. Update them with the actual Identifier,Reply URL and Sign on URL of the base URL of your Lenses portal instance. See the [Lenses.io SSO documentation](https://docs.lenses.io/install_setup/configuration/security.html#single-sign-on-sso-saml-2-0) for more information.
+    > These values aren't real. Update them with the actual Identifier,Reply URL and Sign on URL of the base URL of your Lenses portal instance. See the Lenses.io SSO documentation for more information.
 
 1. On the **Set up single sign-on with SAML** page, go to the **SAML Signing Certificate** section. Find **Federation Metadata XML**, and then select **Download** to download and save the certificate on your computer.
 
@@ -100,14 +94,14 @@ Follow these steps to enable Microsoft Entra SSO in the Azure portal:
 
 ## Configure Lenses.io SSO
 
-To configure SSO on the **Lenses.io** portal, install the downloaded **Federation Metadata XML** on your Lenses instance and [configure Lenses to enable SSO](https://docs.lenses.io/install_setup/configuration/security.html#configure-lenses).
+To configure SSO on the **Lenses.io** portal, install the downloaded **Federation Metadata XML** on your Lenses instance and configure Lenses to enable SSO.
 
 ### Create Lenses.io test group permissions
 
 1. To create a group in Lenses, use the **Object ID** of the **LensesUsers** group. This is the ID that you copied in the user [creation section](#create-an-azure-ad-test-user-and-group).
 1. Assign the desired permissions for B.Simon.
 
-For more information, see [Azure - Lenses group mapping](https://docs.lenses.io/install_setup/configuration/security.html#azure-groups).
+For more information, see Azure - Lenses group mapping.
 
 ## Test SSO
 

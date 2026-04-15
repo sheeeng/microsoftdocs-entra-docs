@@ -1,21 +1,14 @@
 ---
-title: Microsoft Entra integration with ANAQUA
+title: Configure ANAQUA for Single sign-on with Microsoft Entra ID
 description: Learn how to configure single sign-on between Microsoft Entra ID and ANAQUA.
 
-author: nguhiu
-manager: CelesteDG
 ms.reviewer: celested
-ms.service: entra-id
-ms.subservice: saas-apps
-
 ms.topic: how-to
 ms.date: 03/25/2025
-ms.author: gideonkiratu
-
 # Customer intent: As an IT administrator, I want to learn how to configure single sign-on between Microsoft Entra ID and ANAQUA so that I can control who has access to ANAQUA, enable automatic sign-in with Microsoft Entra accounts, and manage my accounts in one central location.
 ---
 
-# Integrate ANAQUA with Microsoft Entra ID
+# Configure ANAQUA for Single sign-on with Microsoft Entra ID
 
 In this article,  you learn how to integrate ANAQUA with Microsoft Entra ID. When you integrate ANAQUA with Microsoft Entra ID, you can:
 
@@ -24,7 +17,9 @@ In this article,  you learn how to integrate ANAQUA with Microsoft Entra ID. Whe
 * Manage your accounts in one central location.
 
 ## Prerequisites
+
 The scenario outlined in this article assumes that you already have the following prerequisites:
+
 [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
 * ANAQUA single sign-on (SSO) enabled subscription.
 
@@ -44,7 +39,7 @@ To configure the integration of ANAQUA into Microsoft Entra ID, you need to add 
 1. In the **Add from the gallery** section, type **ANAQUA** in the search box.
 1. Select **ANAQUA** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
 
- Alternatively, you can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration). In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, and walk through the SSO configuration as well. [Learn more about Microsoft 365 wizards.](/microsoft-365/admin/misc/azure-ad-setup-guides)
+ [!INCLUDE [sso-wizard.md](~/identity/saas-apps/includes/sso-wizard.md)]
 
 <a name='configure-and-test-azure-ad-sso-for-anaqua'></a>
 
@@ -88,7 +83,7 @@ Follow these steps to enable Microsoft Entra SSO.
     `https://<SUBDOMAIN>.anaqua.com/anaqua/Public/login.aspx`
 
 	> [!NOTE]
-	> These values aren't real. Update these values with the actual Identifier, Reply URL and Sign-on URL. Contact [ANAQUA Client support team](https://go.anaqua.com/contact-us) to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
+	> These values aren't real. Update these values with the actual Identifier, Reply URL and Sign-on URL. Contact ANAQUA Client support team to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
 
 1. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, find **Federation Metadata XML** and select **Download** to download the metadata file and save it on your computer.
 
@@ -104,7 +99,7 @@ Follow these steps to enable Microsoft Entra SSO.
 
 ## Configure ANAQUA SSO
 
-To configure single sign-on on **ANAQUA** side, you need to send the downloaded **Federation Metadata XML** and appropriate copied URLs from the application configuration to [ANAQUA support team](https://go.anaqua.com/contact-us). They set this setting to have the SAML SSO connection set properly on both sides.
+To configure single sign-on on **ANAQUA** side, you need to send the downloaded **Federation Metadata XML** and appropriate copied URLs from the application configuration to ANAQUA support team. They set this setting to have the SAML SSO connection set properly on both sides.
 
 ### Create ANAQUA test user
 

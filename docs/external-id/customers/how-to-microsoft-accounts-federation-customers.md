@@ -1,13 +1,8 @@
 ---
 title: Add MSA for customer sign-in
 description: Learn how to add MSA as an identity provider for your external tenant.
-author: csmulligan
-manager: celestedg
-ms.service: entra-external-id
-ms.subservice: external
 ms.topic: how-to
-ms.date: 03/12/2025
-ms.author: cmulligan
+ms.date: 09/16/2025
 ms.custom: it-pro, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 #Customer intent: As a dev, devops, or it admin, I want to
 ---
@@ -19,16 +14,14 @@ ms.custom: it-pro, has-azure-ad-ps-ref, azure-ad-ref-level-one-done
 By setting up federation with Microsoft account (live.com) using OpenID Connect (OIDC) identity provider, you enable users to sign up and sign in to your applications using their existing Microsoft accounts (MSA).
 After you add the MSA (live.com) as one of your user flow's sign-in options, customers can sign up and sign in to your application with their Microsoft account.
 
-> [!TIP]
-> [![Try it now](./media/common/try-it-now.png)](https://woodgrovedemo.com/#usecase=MSA)
->
-> To try out this feature, go to the Woodgrove Groceries demo and start the “Microsoft personal account (live.com)” use case.
-
 ## Prerequisites
 
 - An [external tenant](how-to-create-external-tenant-portal.md).
 - A [sign-up and sign-in user flow](how-to-user-flow-sign-up-sign-in-customers.md).
 - A Microsoft account (live.com). If you don't already have one, sign up at https://www.live.com/.
+
+> [!NOTE]
+> This feature is available only for users who sign up with a Microsoft account (MSA). It isn’t available for [B2B guest users](/entra/external-id/user-properties) invited to the tenant.
 
 ## Create a Microsoft account application
 
@@ -37,7 +30,7 @@ To enable sign-in for users with a Microsoft account, you need to create an appl
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **App registrations** then select **New registration**.
 1. Name the application, for example *ContosoApp*.
-1. Under **Supported account types**, select _Personal Microsoft accounts only_.
+1. Under **Supported account types**, select _Accounts in any organizational directory (Any Microsoft Entra ID tenant - Multitenant) and personal Microsoft accounts (e.g., Skype, Xbox)_.
 1. Under **Redirect URI**, select **Web** and enter your populated redirect URI explained [here](/entra/external-id/customers/how-to-custom-oidc-federation-customers#set-up-your-openid-connect-identity-provider)
 1. Select **Register**.
 
@@ -96,5 +89,6 @@ At this point, the MSA identity provider has been set up in your Microsoft Entra
 
 ## Related content
 
+- [Add a Microsoft Entra ID tenant as an OIDC identity provider](how-to-entra-id-federation-customers.md)
 - [Add an Azure AD B2C tenant as an OIDC identity provider](how-to-b2c-federation-customers.md)
 - [OIDC claims mapping](reference-oidc-claims-mapping-customers.md)

@@ -2,12 +2,9 @@
 title: Microsoft Global Secure Access deployment guide for Microsoft Traffic
 description: Deploy and verify Microsoft Global Secure Access for Microsoft Traffic
 customer intent: As a Microsoft Partner, I want to deploy Microsoft Traffic as a Proof of Concept in my production or test environment.
-author: jricketts
-manager: martinco
 ms.service: global-secure-access
-ms.topic: conceptual
+ms.topic: how-to
 ms.date: 01/06/2025
-ms.author: jricketts
 ---
 # Microsoft Global Secure Access deployment guide for Microsoft Traffic
 
@@ -28,7 +25,7 @@ Before you enable Microsoft Entra Secure Access Essentials, determine what you w
 
 |Use case|Recommended configuration|
 |---|---|
-|Prevent users and groups from using managed devices to access Microsoft 365 endpoints in other tenants.|Configure universal tenant restrictions.|
+|Prevent users and groups from using your organization's devices to sign in to unauthorized Entra ID tenants.|Configure universal tenant restrictions.|
 |Ensure users connect and authenticate only with the Global Secure Access secure network tunnel to reduce risk of token theft/replay for Microsoft 365 and all Enterprise applications.|Configure compliant network check in Conditional Access policies.|
 |Maximize threat hunting success and efficiencies.|Configure Source IP restoration (Preview) and [Use enriched Microsoft 365 logs](../global-secure-access/how-to-view-enriched-logs.md).|
 

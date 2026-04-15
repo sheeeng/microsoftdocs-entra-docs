@@ -1,21 +1,15 @@
 ---
-title: Microsoft Entra SSO integration with Second Nature AI
+title: Configure Second Nature AI for Single sign-on with Microsoft Entra ID
 description: Learn how to configure single sign-on between Microsoft Entra ID and Second Nature AI.
 services: active-directory
-author: nguhiu
-manager: CelesteDG
-ms.reviewer: CelesteDG
-ms.service: entra-id
-ms.subservice: saas-apps
+ms.reviewer: jomondi
 ms.workload: identity
 ms.topic: how-to
 ms.date: 08/08/2024
-ms.author: gideonkiratu
-
 # Customer intent: As an IT administrator, I want to learn how to configure single sign-on between Microsoft Entra ID and Directory Services so that I can control who has access to Directory Services, enable automatic sign-in with Microsoft Entra accounts, and manage my accounts in one central location.
 ---
 
-# Microsoft Entra SSO integration with Second Nature AI
+# Configure Second Nature AI for Single sign-on with Microsoft Entra ID
 
 In this article,  you learn how to integrate Second Nature AI with Microsoft Entra ID. When you integrate Second Nature AI with Microsoft Entra ID, you can:
 
@@ -25,6 +19,7 @@ In this article,  you learn how to integrate Second Nature AI with Microsoft Ent
 
 ## Prerequisites
 The scenario outlined in this article assumes that you already have the following prerequisites:
+
 [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
 * Second Nature AI single sign-on (SSO) enabled subscription.
 

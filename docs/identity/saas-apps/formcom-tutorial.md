@@ -1,20 +1,13 @@
 ---
-title: Microsoft Entra integration with Form.com
+title: Configure Form.com for Single sign-on with Microsoft Entra ID
 description: Learn how to configure single sign-on between Microsoft Entra ID and Form.com.
-
-author: nguhiu
-manager: CelesteDG
 ms.reviewer: celested
-ms.service: entra-id
-ms.subservice: saas-apps
-
 ms.topic: how-to
 ms.date: 03/25/2025
-ms.author: gideonkiratu
-
+ms.custom: sfi-image-nochange
 # Customer intent: As an IT administrator, I want to learn how to configure single sign-on between Microsoft Entra ID and Form.com so that I can control who has access to Form.com, enable automatic sign-in with Microsoft Entra accounts, and manage my accounts in one central location.
 ---
-# Microsoft Entra integration with Form.com
+# Configure Form.com for Single sign-on with Microsoft Entra ID
 
 In this article,  you learn how to integrate Form.com with Microsoft Entra ID. When you integrate Form.com with Microsoft Entra ID, you can:
 
@@ -23,7 +16,9 @@ In this article,  you learn how to integrate Form.com with Microsoft Entra ID. W
 * Manage your accounts in one central location.
 
 ## Prerequisites
+
 The scenario outlined in this article assumes that you already have the following prerequisites:
+
 [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
 * Form.com single sign-on (SSO) enabled subscription.
 
@@ -42,7 +37,7 @@ To configure the integration of Form.com into Microsoft Entra ID, you need to ad
 1. In the **Add from the gallery** section, type **Form.com** in the search box.
 1. Select **Form.com** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
 
- Alternatively, you can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration). In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, and walk through the SSO configuration as well. [Learn more about Microsoft 365 wizards.](/microsoft-365/admin/misc/azure-ad-setup-guides)
+ [!INCLUDE [sso-wizard.md](~/identity/saas-apps/includes/sso-wizard.md)]
 
 <a name='configure-and-test-azure-ad-sso-for-formcom'></a>
 
@@ -88,7 +83,7 @@ Follow these steps to enable Microsoft Entra SSO.
     ```
 
 	> [!NOTE]
-	> These values aren't real. Update these values with the actual Sign-On URL, Identifier and Reply URL. Contact [Form.com Client support team](https://form.com/about/company/contact-us/) to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
+	> These values aren't real. Update these values with the actual Sign-On URL, Identifier and Reply URL. Contact Form.com Client support team to get these values. You can also refer to the patterns shown in the **Basic SAML Configuration** section.
 
 1. On the **Set up Single Sign-On with SAML** page, in the **SAML Signing Certificate** section, select **Download** to download the **Certificate (Base64)** and select the copy **icon** to copy **App Federation Metadata Url** from the given options as per your requirement and save it on your computer.
 
@@ -104,11 +99,11 @@ Follow these steps to enable Microsoft Entra SSO.
 
 ## Configure Form.com SSO
 
-To configure single sign-on on **Form.com** side, you need to send the downloaded **Certificate (Base64)**, **App Federation Metadata Url** and appropriate copied URLs from the application configuration to [Form.com support team](https://form.com/about/company/contact-us/). They set this setting to have the SAML SSO connection set properly on both sides.
+To configure single sign-on on **Form.com** side, you need to send the downloaded **Certificate (Base64)**, **App Federation Metadata Url** and appropriate copied URLs from the application configuration to Form.com support team. They set this setting to have the SAML SSO connection set properly on both sides.
 
 ### Create Form.com test user
 
-In this section, you create a user called Britta Simon in Form.com. Work with [Form.com support team](https://form.com/about/company/contact-us/) to add the users in the Form.com platform. Users must be created and activated before you use single sign-on.
+In this section, you create a user called Britta Simon in Form.com. Work with Form.com support team to add the users in the Form.com platform. Users must be created and activated before you use single sign-on.
 
 ## Test SSO
 

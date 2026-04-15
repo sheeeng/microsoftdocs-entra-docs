@@ -1,15 +1,8 @@
 ---
 title: Add an application to a user flow
 description: Learn how to add an application to a user flow to associate the application with a sign-up and sign-in user experience. Get guidance for updating the application configuration with application registration and tenant information.
- 
-author: msmimart
-manager: celestedg
-ms.service: entra-external-id
- 
-ms.subservice: external
 ms.topic: how-to
 ms.date: 04/14/2025
-ms.author: mimart
 ms.custom: it-pro
 
 ---

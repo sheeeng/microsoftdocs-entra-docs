@@ -2,10 +2,9 @@
 title: OAuth 2.0 and OpenID Connect protocols 
 description: Learn about OAuth 2.0 and OpenID Connect in Microsoft identity platform. Explore authentication flows, endpoints, and secure user authentication.
 author: henrymbuguakiarie
-manager: CelesteDG
+manager: pmwongera
 ms.author: henrymbugua
-ms.custom: has-adal-ref
-ms.date: 04/28/2025
+ms.date: 05/14/2025
 ms.reviewer: nickludwig
 ms.service: identity-platform
 

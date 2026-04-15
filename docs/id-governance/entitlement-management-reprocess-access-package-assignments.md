@@ -1,14 +1,11 @@
 ---
 title: Reprocess assignments for an access package in entitlement management
 description: Learn how to reprocess assignments for an access package in entitlement management.
-author: owinfreyatl
-manager: femila
-ms.service: entra-id-governance
 ms.subservice: entitlement-management
 ms.topic: how-to
 ms.date: 07/15/2024
-ms.author: owinfrey
-#Customer intent: As an administrator or access package manager, I want detailed information about how I can reprocess assignments for an access package in the event of a partial delivery, so that requestors have all of the resources they need to perform their job.
+ms.custom: sfi-image-nochange
+#Customer Intent: As an IT admin, I want to reprocess assignments for an access package so that I can resolve failed or incomplete access assignments.
 ---
 # Reprocess assignments for an access package in entitlement management
 

@@ -1,21 +1,14 @@
 ---
-title: Microsoft Entra SSO integration with In Case of Crisis - Mobile
+title: Configure In Case of Crisis - Mobile for Single sign-on with Microsoft Entra ID
 description: Learn how to configure single sign-on between Microsoft Entra ID and In Case of Crisis - Mobile.
 
-author: nguhiu
-manager: CelesteDG
 ms.reviewer: celested
-ms.service: entra-id
-ms.subservice: saas-apps
-
 ms.topic: how-to
 ms.date: 04/15/2024
-ms.author: gideonkiratu
-
 # Customer intent: As an IT administrator, I want to learn how to configure single sign-on between Microsoft Entra ID and In Case of Crisis - Mobile so that I can control who has access to In Case of Crisis - Mobile, enable automatic sign-in with Microsoft Entra accounts, and manage my accounts in one central location.
 ---
 
-# Microsoft Entra SSO integration with In Case of Crisis - Mobile
+# Configure In Case of Crisis - Mobile for Single sign-on with Microsoft Entra ID
 
 In this article,  you learn how to integrate In Case of Crisis - Mobile with Microsoft Entra ID. When you integrate In Case of Crisis - Mobile with Microsoft Entra ID, you can:
 
@@ -24,7 +17,9 @@ In this article,  you learn how to integrate In Case of Crisis - Mobile with Mic
 * Manage your accounts in one central location.
 
 ## Prerequisites
+
 The scenario outlined in this article assumes that you already have the following prerequisites:
+
 [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
 * In Case of Crisis - Mobile single sign-on (SSO) enabled subscription.
 
@@ -46,7 +41,7 @@ To configure the integration of In Case of Crisis - Mobile into Microsoft Entra 
 1. In the **Add from the gallery** section, type **In Case of Crisis - Mobile** in the search box.
 1. Select **In Case of Crisis - Mobile** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
 
- Alternatively, you can also use the [Enterprise App Configuration Wizard](https://portal.office.com/AdminPortal/home?Q=Docs#/azureadappintegration). In this wizard, you can add an application to your tenant, add users/groups to the app, assign roles, and walk through the SSO configuration as well. [Learn more about Microsoft 365 wizards.](/microsoft-365/admin/misc/azure-ad-setup-guides)
+ [!INCLUDE [sso-wizard.md](~/identity/saas-apps/includes/sso-wizard.md)]
 
 <a name='configure-and-test-azure-ad-sso-for-in-case-of-crisis---mobile'></a>
 
@@ -92,11 +87,11 @@ Follow these steps to enable Microsoft Entra SSO.
 
 ## Configure In Case of Crisis - Mobile SSO
 
-To configure single sign-on on **In Case of Crisis - Mobile** side, you need to send the downloaded **Certificate (Raw)** and copied **User access URL** from Azure portal to [In Case of Crisis - Mobile support team](https://www.rockdovesolutions.com/in-case-of-crisis-microsoft-teams-integration). They set this setting to have the SAML SSO connection set properly on both sides.
+To configure single sign-on on **In Case of Crisis - Mobile** side, you need to send the downloaded **Certificate (Raw)** and copied **User access URL** from Azure portal to In Case of Crisis - Mobile support team. They set this setting to have the SAML SSO connection set properly on both sides.
 
 ### Create In Case of Crisis - Mobile test user
 
-In this section, you create a user called Britta Simon in In Case of Crisis - Mobile. Work with [In Case of Crisis - Mobile support team](https://www.rockdovesolutions.com/in-case-of-crisis-microsoft-teams-integration) to add the users in the In Case of Crisis - Mobile platform. Users must be created and activated before you use single sign-on.
+In this section, you create a user called Britta Simon in In Case of Crisis - Mobile. Work with In Case of Crisis - Mobile support team to add the users in the In Case of Crisis - Mobile platform. Users must be created and activated before you use single sign-on.
 
 ## Test SSO
 

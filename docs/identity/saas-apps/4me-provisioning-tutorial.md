@@ -1,21 +1,15 @@
 ---
 title: Configure 4me for automatic user provisioning with Microsoft Entra ID
 description: Learn how to configure Microsoft Entra ID to automatically provision and de-provision user accounts to 4me.
-
-author: thomasakelo
-manager: CelesteDG
-ms.service: entra-id
-ms.subservice: saas-apps
-
+author: jeevansd
 ms.topic: how-to
 ms.date: 03/25/2025
-ms.author: thomasakelo
-
+ms.author: jeedes
+ms.custom: sfi-image-nochange
 # Customer intent: As an IT administrator, I want to learn how to automatically provision and deprovision user accounts from Microsoft Entra ID to 4me so that I can streamline the user management process and ensure that users have the appropriate access to 4me.
-
 ---
 
-# Configure 4me for automatic user provisioning
+# Configure 4me for automatic user provisioning with Microsoft Entra ID
 
 The objective of this article is to demonstrate the steps to be performed in 4me and Microsoft Entra ID to configure Microsoft Entra ID to automatically provision and de-provision users and/or groups to 4me.
 
@@ -114,7 +108,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 10. Under the **Mappings** section, select **Synchronize Microsoft Entra users to 4me**.
 	
-11. Review the user attributes that are synchronized from Microsoft Entra ID to 4me in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in 4me for update operations. Please ensure that [4me supports filtering](https://developer.4me.com/v1/scim/users/) on the matching attribute you have chosen. Select the **Save** button to commit any changes.
+11. Review the user attributes that are synchronized from Microsoft Entra ID to 4me in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in 4me for update operations. Please ensure that [4me supports filtering](https://developer.xurrent.com/v1/scim/users/) on the matching attribute you have chosen. Select the **Save** button to commit any changes.
 
 	![Screenshot of 4me User attributes list.](media/4me-provisioning-tutorial/4me-user-attributes-first-part.png)
 	![Screenshot of 4me User attributes list-2.](media/4me-provisioning-tutorial/4me-user-attributes-second-part.png)

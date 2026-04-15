@@ -2,19 +2,16 @@
 title: Configure Thrive LXP for automatic user provisioning with Microsoft Entra ID
 description: Learn how to automatically provision and de-provision user accounts from Microsoft Entra ID to Thrive LXP.
 
-author: thomasakelo
-manager: jeedes
-ms.service: entra-id
-ms.subservice: saas-apps
-
+author: jeevansd
+manager: pmwongera
 ms.topic: how-to
-ms.date: 03/25/2024
-ms.author: thomasakelo
+ms.date: 05/20/2025
+ms.author: jeedes
 
 # Customer intent: As an IT administrator, I want to learn how to automatically provision and deprovision user accounts from Microsoft Entra ID to Thrive LXP so that I can streamline the user management process and ensure that users have the appropriate access to Thrive LXP.
 ---
 
-# Configure Thrive LXP for automatic user provisioning
+# Configure Thrive LXP for automatic user provisioning with Microsoft Entra ID
 
 This article describes the steps you need to perform in both Thrive LXP and Microsoft Entra ID to configure automatic user provisioning. When configured, Microsoft Entra ID automatically provisions and de-provisions users and groups to [Thrive LXP](https://thrivelearning.com/) using the Microsoft Entra provisioning service. For important details on what this service does, how it works, and frequently asked questions, see [Automate user provisioning and deprovisioning to SaaS applications with Microsoft Entra ID](~/identity/app-provisioning/user-provisioning.md). 
 
@@ -80,7 +77,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 	![Provisioning tab automatic](common/provisioning-automatic.png)
 
-5. Under the **Admin Credentials** section, input your Thrive LXP Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Thrive LXP. If the connection fails, ensure your Thrive LXP account has Admin permissions and try again.
+5. Under the **Admin Credentials** section, enter your Thrive LXP Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Thrive LXP. If the connection fails, ensure your Thrive LXP account has Admin permissions and try again.
 
  	![Token](common/provisioning-testconnection-tenanturltoken.png)
 

@@ -1,17 +1,11 @@
 ---
 title: How to analyze the Microsoft Entra provisioning logs
 description: Learn how to download, view, and analyze the details in the provisioning logs from Microsoft Entra ID.
-author: shlipsey3
-manager: femila
-ms.service: entra-id
 ms.topic: how-to
-ms.subservice: monitoring-health
-ms.date: 03/19/2025
-ms.author: sarahlipsey
+ms.date: 07/10/2025
 ms.reviewer: arvinh
-
+ms.custom: sfi-image-nochange
 # Customer intent: As an IT admin, I want to download, view, and analyze the details in the provisioning logs from Microsoft Entra ID.
-
 ---
 
 # How to download and analyze the Microsoft Entra provisioning logs
@@ -24,6 +18,7 @@ This article describes the options for downloading the provisioning logs from th
 
 - A working Microsoft Entra tenant with a Microsoft Entra ID P1 or P2 license associated with it.
 - [Reports Reader](../../identity/role-based-access-control/permissions-reference.md#reports-reader) is the least privileged role required to access the provisioning logs.
+- Application owners can also view logs applications that they own.
     - For a full list of roles, see [Least privileged role by task](../role-based-access-control/delegate-by-task.md#monitoring-and-health---audit-and-sign-in-logs-least-privileged-roles).
 
 ## How to view the provisioning logs
@@ -156,9 +151,10 @@ Use the following table to better understand how to resolve errors that you find
 | InvitationCreation<br/>FailureAmbiguousUser| The invited user has a proxy address that matches an internal user in the target tenant. The proxy address must be unique. | To resolve this error, delete the existing internal user in the target tenant or remove this user from sync scope.|
 | AzureActiveDirectory<br/>CannotUpdateObjects<br/>MasteredOnPremises| If the user in the target tenant was originally synchronized from AD to Microsoft Entra ID and converted to an external user, the source of authority is still on-premises and the user can't be updated.| The user can't be updated with cross-tenant synchronization. |
 | EntityTypeNotSupported|Groups can be used to determine what users are in scope for provisioning. Groups objects cannot be synchronized. | No customer action is required. This is a skipped event. If you are using the provisioning on-demand, ensure that you choose a user rather than a group to provision.|
+| AzureActiveDirectoryConflictEncountered|There is a conflicting object in the target tenant. | Check if there is a contact in the target tenant with the same mail. Delete the contact from the target tenant to ensure that the B2B user can be updated. Take care to migrate any group memberships from the contact to the B2B user as needed.|
 
 ## Related content
 
 - [Check the status of user provisioning](../app-provisioning/application-provisioning-when-will-provisioning-finish-specific-user.md)
-- [Problem configuring user provisioning to a Microsoft Entra Gallery application](../app-provisioning/application-provisioning-config-problem.md)
+- [Problem configuring user provisioning to a Microsoft Entra Gallery application](../app-provisioning/troubleshoot.md)
 - [Graph API for provisioning logs](/graph/api/resources/provisioningobjectsummary)

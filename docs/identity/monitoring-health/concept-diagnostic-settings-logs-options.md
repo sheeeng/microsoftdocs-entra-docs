@@ -1,13 +1,8 @@
 ---
 title: Logs available for streaming from Microsoft Entra ID
 description: Learn about the Microsoft Entra logs available for streaming to an endpoint for storage, analysis, or monitoring.
-author: shlipsey3
-manager: femila
-ms.service: entra-id
-ms.topic: conceptual
-ms.subservice: monitoring-health
+ms.topic: concept-article
 ms.date: 04/16/2025
-ms.author: sarahlipsey
 ms.reviewer: egreenberg14
 
 # Customer Intent: As an IT admin, I want to know what logs are available for streaming to an endpoint from Microsoft Entra ID so that I can choose the best option for my organization.
@@ -68,7 +63,7 @@ The `RiskyUsers` logs identify users who are at risk based on their sign-in acti
 
 ### User risk events
 
-The `UserRiskEvents` logs are part of Microsoft Entra ID Protection. These logs capture details about risky sign-in events. For more information, see [How to investigate risk](~/id-protection/howto-identity-protection-investigate-risk.md#risky-sign-ins-report).
+The `UserRiskEvents` logs are part of Microsoft Entra ID Protection. These logs capture details about risky sign-in events. For more information, see [How to investigate risk](~/id-protection/howto-identity-protection-investigate-risk.md).
 
 ### Network access traffic logs
 
