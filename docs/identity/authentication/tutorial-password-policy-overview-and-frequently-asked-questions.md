@@ -16,7 +16,7 @@ This document provides answers to frequently asked questions about password poli
 ## Policies Evaluated During Password Change or Reset (Password Length and Complexity)
 
 ### Synced Users
-The on-premises Active Directory (AD) password policy that applies to synced users is modified under Account Policies → Password Policy.
+The on-premises Active Directory (AD) password policy that applies to synced users is modified under **Account Policies** > **Password Policy**.
 For example, by changing the minimum password length, you can reduce the requirement to six characters or fewer, or enforce a stricter policy such as ten or more characters.
  [![Password length](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordLength.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordLength.png)
 
