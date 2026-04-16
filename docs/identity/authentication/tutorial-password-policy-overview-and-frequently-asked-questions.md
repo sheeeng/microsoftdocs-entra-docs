@@ -219,7 +219,7 @@ This is expected behavior and doesn't require remediation.
 The reason and behavior are the same as during password change, although the displayed screens differ slightly.
 
 ### Does Microsoft provide recommended password policy guidance?
-[Microsoft’s recommended password policy](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide) includes the following principles:
+[Microsoft's recommended password policy](/microsoft-365/admin/misc/password-policy-recommendations) includes the following principles:
 
 * Set a minimum password length of 8 characters
 * Don't require specific character composition (such as mandatory symbols)
