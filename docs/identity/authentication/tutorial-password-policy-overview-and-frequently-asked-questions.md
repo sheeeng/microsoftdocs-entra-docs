@@ -31,7 +31,7 @@ Although Entra ID doesn't provide the same granular password complexity settings
 The global banned password list is enabled for all tenants and cannot be disabled.
 It blocks weak passwords such as admin or baseball.
 The custom banned password list allows organizations to register words such as the company name or abbreviations and prevent them from being used in passwords.
-For details, see [the related public documentation](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad#global-banned-password-list).
+For details, see [Global banned password list](/entra/identity/authentication/concept-password-ban-bad#global-banned-password-list).
 
 ### Guest Users
 Guest users are subject to the settings of their home tenant, where they are originally registered as members.
