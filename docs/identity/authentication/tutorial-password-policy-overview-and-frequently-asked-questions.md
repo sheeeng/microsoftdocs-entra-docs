@@ -223,7 +223,7 @@ The reason and behavior are the same as during password change, although the dis
 
 * Set a minimum password length of 8 characters
 * Don't require specific character composition (such as mandatory symbols)
-* Doon't force periodic password changes
+* Don't force periodic password changes
 * Block commonly used or weak passwords
 * Don't reuse organizational passwords for non-business purposes
 
