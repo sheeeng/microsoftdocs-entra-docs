@@ -85,7 +85,7 @@ If you want to configure a password expiration, uncheck the checkbox as shown be
 
 > [!Tip]
 > Even in environments where the password expiration is set to 90 days using the above setting, there may be scenarios where you want to set the password to never expire for only specific users, such as system accounts.
-> In this case, in addition to the above setting, you can individually configure the account to never expire by setting DisablePasswordExpiration using the Update-MgUser command for that specific account. For more details, please refer to [Setting an individual user’s password to never expire](https://learn.microsoft.com/en-us/microsoft-365/admin/misc/password-policy-recommendations?view=o365-worldwide).
+> In this case, you can individually configure the account to never expire by setting `DisablePasswordExpiration` using the `Update-MgUser` command for that specific account. For more details, see [Set an individual user's password to never expire](/microsoft-365/admin/misc/password-policy-recommendations).
 
 ### Guest Users
 Password expiration for guest users is managed by the organization in the guest’s home tenant.
