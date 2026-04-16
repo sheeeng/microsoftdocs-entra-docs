@@ -127,7 +127,7 @@ Update-MgDirectoryOnPremiseSynchronization
  -Features $OnPremSync.Features
 ```
 
-By default, this feature is disabled. Without enabling it, users must change their password on-premises first, otherwise sign-in fails. After enabling this option, users are prompted to change their password in Entra ID. Please also refer to [the related public documentation](https://learn.microsoft.com/en-us/entra/identity/hybrid/connect/how-to-connect-password-hash-synchronization#enforcecloudpasswordpolicyforpasswordsyncedusers) for details.
+By default, this feature is disabled. Without enabling it, users must change their password on-premises first, otherwise sign-in fails. After enabling this option, users are prompted to change their password in Entra ID. For details, see [Enforce cloud password policy for synced users](/entra/identity/hybrid/connect/how-to-connect-password-hash-synchronization#enforcecloudpasswordpolicyforpasswordsyncedusers).
 
 ### What is the default password expiration period shown in the Microsoft 365 admin center?
 Previously, the default was 90 days. However, for tenants created around spring 2021 or later, the default value is never expire.
