@@ -77,7 +77,7 @@ After specified number of days has passed, users are prompted to change their pa
 Password expiration in Entra ID can be changed using the Microsoft 365 admin center or PowerShell.
 
 1. Go to [Password expiration policy setting](https://admin.cloud.microsoft/?#/Settings/SecurityPrivacy/:/Settings/L1/PasswordPolicy).
-1. In the image below, the password expiration is set to Never expire.
+1. In the following image, the password expiration is set to **Never expire**.
  [![Password expiration never](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationNever.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationNever.png)
 
 If you want to configure a password expiration, uncheck the checkbox as shown below.
