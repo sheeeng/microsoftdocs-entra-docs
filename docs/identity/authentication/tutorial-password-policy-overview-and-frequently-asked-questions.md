@@ -26,7 +26,7 @@ Depending on the environment, synced users might also be subject to Entra ID res
 
 ### Cloud-Only Users
 For cloud users, the Entra ID password policy cannot be customized, except for password expiration.
-For detailed information about the Entra ID password policy, please refer to [the relevant public documentation](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-sspr-policy?tabs=ms-powershell#microsoft-entra-password-policies).
+For detailed information about the Entra ID password policy, see [Microsoft Entra password policies](/entra/identity/authentication/concept-sspr-policy?tabs=ms-powershell#microsoft-entra-password-policies).
 Although Entra ID doesn't provide the same granular password complexity settings as on-premises AD, it does include a global banned password list and a custom banned password list.
 The global banned password list is enabled for all tenants and cannot be disabled.
 It blocks weak passwords such as admin or baseball.
