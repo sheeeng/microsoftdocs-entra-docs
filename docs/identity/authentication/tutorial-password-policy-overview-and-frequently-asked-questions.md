@@ -204,7 +204,7 @@ Common weak passwords such as Admin or Password are already blocked by the globa
 
 ### When are global and custom banned passwords evaluated?
 They are evaluated during password change and password reset operations.
-Depending on the password evaluation results described in [the public documentation](https://learn.microsoft.com/en-us/entra/identity/authentication/concept-password-ban-bad#how-are-passwords-evaluated), a password containing a custom banned word may still be accepted in some cases.
+Depending on the password evaluation results described in [How are passwords evaluated](/entra/identity/authentication/concept-password-ban-bad#how-are-passwords-evaluated), a password containing a custom banned word might still be accepted in some cases.
 
 ### When synced users change their password from Entra ID, the screen always shows “Please wait a few minutes.” Why?
 This occurs when the password meets the on-premises AD password policy but does not meet the Entra ID password policy.
