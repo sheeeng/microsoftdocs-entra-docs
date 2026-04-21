@@ -11,14 +11,14 @@ adobe-target: true
 This document provides answers to frequently asked questions about password policies and password expiration, with a focus on how these policies apply to different user types in Microsoft Entra ID.
 
 ## Password Policy Quick Reference by User Type
- [![Password policy quick reference](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordPolicyQuickReference.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordPolicyQuickReference.png)
+ [![Password policy quick reference](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordpolicyquickreference.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordpolicyquickreference.png)
 
 ## Policies Evaluated During Password Change or Reset (Password Length and Complexity)
 
 ### Synced Users
 The on-premises Active Directory (AD) password policy that applies to synced users is modified under **Account Policies** > **Password Policy**.
 For example, by changing the minimum password length, you can reduce the requirement to six characters or fewer, or enforce a stricter policy such as ten or more characters.
- [![Password length](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordLength.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordLength.png)
+ [![Password length](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordlength.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordlength.png)
 
 If the password writeback option in Microsoft Entra ID Connect is enabled, synced users can change or reset their passwords directly from Entra ID.
 In this case, the password is evaluated by Entra ID before the on-premises AD password policy is applied, which prevents users from setting easily guessable passwords.
@@ -68,7 +68,7 @@ Account Policies → Password Policy.
 Note that account policies can be defined in only one GPO linked to the domain.
 For this reason, configure these settings by editing the Default Domain Policy.
 
- [![Password length](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordAge.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordAge.png)
+ [![Password length](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordage.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordage.png)
 
 
 ### Cloud-Only Users Created Directly in Entra ID
@@ -78,10 +78,10 @@ Password expiration in Entra ID can be changed using the Microsoft 365 admin cen
 
 1. Go to [Password expiration policy setting](https://admin.cloud.microsoft/?#/Settings/SecurityPrivacy/:/Settings/L1/PasswordPolicy).
 1. In the following image, the password expiration is set to **Never expire**.
- [![Password expiration never](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationNever.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationNever.png)
+ [![Password expiration never](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordexpirationnever.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordexpirationnever.png)
 
 If you want to configure a password expiration, uncheck the checkbox as shown below.
-[![Password expiration uncheck](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationUncheck.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordExpirationUncheck.png)
+[![Password expiration uncheck](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordexpirationuncheck.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordexpirationuncheck.png)
 
 > [!Tip]
 > Even in environments where the password expiration is set to 90 days using the above setting, there may be scenarios where you want to set the password to never expire for only specific users, such as system accounts.
@@ -185,14 +185,14 @@ LastPasswordChangeDateTime : 2024/02/27 4:51:12
 
 ### Is “change password” the same as “reset password”?
 No. These terms represent different actions.
-[![Password change and Password reset](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordChangeAndReset.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/PasswordChangeAndReset.png)
+[![Password change and Password reset](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordchangeandreset.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/passwordchangeandreset.png)
 
 Password change refers to a scenario where the user changes their password to a new one when they already know their current password.
 When performing a password change, the user is required to enter their current (old) password. For example, the prompt shown below is also considered a password change. In addition, even if the password has not yet expired, the user can explicitly change their password from the **My Account** page.
 
 On the other hand, a password reset does not necessarily require the user to know their current password. While a password reset can still be performed even if the user knows the password, it is most commonly used in scenarios where the password is unknown or has been forgotten. (There are also scenarios where a password reset is required as a response to detected risks or security events.)
 When a user performs a password reset by themselves, the **Recover your account** screen, as shown below, is displayed.
-[![SSPR screen](media/tutorial-password-policy-overview-and-frequently-asked-questions/SSPRScreen.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/SSPRScreen.png)
+[![SSPR screen](media/tutorial-password-policy-overview-and-frequently-asked-questions/ssprscreen.png)](media/tutorial-password-policy-overview-and-frequently-asked-questions/ssprscreen.png)
 
 ### Is there a way to prevent users from changing their password?
 No. Users can always change their own password.
