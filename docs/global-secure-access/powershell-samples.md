@@ -9,6 +9,8 @@ ai-usage: ai-assisted
 
 # Global Secure Access PowerShell samples
 
+## Overview
+
 These sample scripts provide guidance on common Global Secure Access tasks using PowerShell. Most samples require the [Microsoft Graph Beta PowerShell module](/powershell/microsoftgraph/installation) 2.10 or newer, unless otherwise noted.
 
 The samples are grouped by scenario.
