@@ -49,7 +49,7 @@ The scenario outlined in this article assumes that you already have the followin
 
       :::image type="content" source="./media/lucidchart-provisioning-tutorial/scim.png" alt-text="Screenshot of the Lucidchart admin console. Within a large S C I M button, the text S C I M is highlighted, and an enabled banner is visible." border="false":::
 
-1. Scroll down to see the **Bearer token** and **Lucidchart Base URL**. Copy and save the **Bearer token**. This value is entered in the **Secret Token** * field in the Provisioning tab of your LucidChart application. 
+1. Scroll down to see the **Bearer token** and **Lucidchart Base URL**. Copy and save the **Bearer token**. This value is entered in the **Secret Token** field in the Provisioning tab of your LucidChart application.
 
       ![Lucidchart token](./media/lucidchart-provisioning-tutorial/token.png)
 

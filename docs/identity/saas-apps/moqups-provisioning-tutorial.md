@@ -89,7 +89,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. In the **Tenant URL** field, enter your Moqups Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Moqups. If the connection fails, ensure your Moqups account has the required admin permissions and try again.
 
-	>[!NOTE]
+	> [!NOTE]
 	> Enter `https://api.moqups.com/scim/v2` in the **Tenant URL**.
 
 	![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)

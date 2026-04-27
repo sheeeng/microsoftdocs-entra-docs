@@ -28,7 +28,7 @@ This article describes the steps you need to perform in both monday.com and Micr
 The scenario outlined in this article assumes that you already have the following prerequisites:
 
 * [!INCLUDE [common-prerequisites.md](~/identity/saas-apps/includes/common-prerequisites.md)]
-* An **Enterprise**  monday.com account.
+* An **Enterprise** monday.com account.
 
 ## Step 1: Plan your provisioning deployment
 1. Learn about [how the provisioning service works](~/identity/app-provisioning/user-provisioning.md).
@@ -38,16 +38,16 @@ The scenario outlined in this article assumes that you already have the followin
 <a name='step-2-configure-mondaycom-to-support-provisioning-with-azure-ad'></a>
 
 ## Step 2: Configure monday.com to support provisioning with Microsoft Entra ID
-1. Login to [monday.com](https://www.monday.com/). Select your profile picture , on the left navigation pane.
-1. Navigate to **Admin > Security** .
-1. Select **Open** in the **SCIM** section under the **Login** tab
+1. Sign in to [monday.com](https://www.monday.com/). Select your profile picture , on the left navigation pane.
+1. Navigate to **Admin > Security**.
+1. Select **Open** in the **SCIM** section under the **Login** tab.
 
 ![Scim Provisioning Tab](media/mondaycom-provisioning-tutorial/provisioning-tab-monday.png)
 
-1. Select **Generate** . These are the **Tenant URL** and **Secret Token** you need for step 5.
+1. Select **Generate**. These are the **Tenant URL** and **Secret Token** you need for step 5.
 
->[!NOTE]
->don't share or save this secret token. You can always generate a new token whenever and wherever it's required.
+> [!NOTE]
+> Don't share or save this secret token. You can always generate a new token whenever and wherever it's required.
 
 <a name='step-3-add-mondaycom-from-the-azure-ad-application-gallery'></a>
 
