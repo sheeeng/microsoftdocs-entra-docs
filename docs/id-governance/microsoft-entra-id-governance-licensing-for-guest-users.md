@@ -49,9 +49,6 @@ The following table contains a list of currently billable actions for **guest us
 | Access Reviews    | [Access Review – inactive users](../identity/users/clean-up-stale-guest-accounts.md#monitor-guest-accounts-at-scale-with-inactive-guest-insights) | Bill when guest user is included in review.<br><br>**API**<br> https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions where inactive guest reviews are included in the policy for a group resource.  | Decision item summary.  |
 
 
-> [!TIP]
-> You can use the [EIG Guest Usage Monitoring Workbook](https://entra.microsoft.com/#blade/AppInsightsExtension/UsageNotebookBlade/ComponentId/Azure%20Active%20Directory/ResourceIds/%5B%22%2Fsubscriptions%2Fab48f397-fc82-4634-aa52-62dd91b3ebaa%2Fresourcegroups%2Fwoodgrove-rg%2Fproviders%2Fmicrosoft.operationalinsights%2Fworkspaces%2Fwoodgrove-loganalyiticsworkspace%22%5D/GalleryResourceType/microsoft.aadiam%2Ftenant) to understand the guest usage trend within your tenant. This report shows past usage that would have been billed. Future usage may differ.
-
 ## Guest billing in multitenant organizations
 
 Governance guest billing only applies for users with a userType of **guest**, so if Microsoft Entra ID Governance licensed member users are brought into other organization tenants with a userType of **member**, they won't accrue to the billing meter.
@@ -156,6 +153,10 @@ billed to the governance guest add-on. Only governance features that are exclusi
 **Does Governance guest billing apply to all guest users, including those within the first 50,000 Monthly Active Users (MAU)?**
 
 Yes, there's no free tier for governance billing. Governance guest billing applies to all guest users, even those within the first 50,000 MAU.
+
+**How can I estimate or understand my guest usage for Microsoft Entra ID Governance billing?**
+
+You can use the [EIG Guest Usage Monitoring Workbook](https://entra.microsoft.com/#blade/AppInsightsExtension/UsageNotebookBlade/ComponentId/Azure%20Active%20Directory/ResourceIds/%5B%22%2Fsubscriptions%2Fab48f397-fc82-4634-aa52-62dd91b3ebaa%2Fresourcegroups%2Fwoodgrove-rg%2Fproviders%2Fmicrosoft.operationalinsights%2Fworkspaces%2Fwoodgrove-loganalyiticsworkspace%22%5D/GalleryResourceType/microsoft.aadiam%2Ftenant) to understand the guest usage trend within your tenant. This report shows past usage that would have been billed. Future usage may differ.
 
 
 ## Guest Governance Features Unavailable Without the Microsoft Entra ID Governance for Guests Add-on 
