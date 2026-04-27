@@ -76,13 +76,13 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the **Provisioning** tab.
 
-	![Provisioning tab](common/provisioning.png)
+	![Screenshot of the Provisioning tab for configuring automatic provisioning](common/provisioning.png)
 
 1. Select **+ New configuration**.
 
 	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
-1. In the **Tenant URL** field, enter your MURAL Identity Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to MURAL Identity. If the connection fails, ensure your MURAL Identity account has the required admin permissions and try again.
+1. In the **Tenant URL** field, enter your Olfeo SAAS Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Olfeo SAAS. If the connection fails, ensure your Olfeo SAAS account has the required admin permissions and try again.
 
 	![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
@@ -96,7 +96,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **Attribute Mapping** in the left panel and select **users**.
 
-1. Review the user attributes that are synchronized from Microsoft Entra ID to MURAL Identity in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in MURAL Identity for update operations. If you choose to change the [matching target attribute](~/identity/app-provisioning/customize-application-attributes.md), you need to ensure that the MURAL Identity API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
+1. Review the user attributes that are synchronized from Microsoft Entra ID to Olfeo SAAS in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Olfeo SAAS for update operations. If you choose to change the [matching target attribute](~/identity/app-provisioning/customize-application-attributes.md), you need to ensure that the Olfeo SAAS API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
 
    |Attribute|Type|Supported for filtering|
    |---|---|---|

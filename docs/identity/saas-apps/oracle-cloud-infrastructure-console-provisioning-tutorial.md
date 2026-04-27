@@ -47,12 +47,12 @@ The scenario outlined in this article assumes that you already have the followin
 
 1. Log on to the Oracle Cloud Infrastructure Console admin portal. On the top left corner of the screen navigate to **Identity > Federation**.
 
-	![Screenshot shows the Oracle Admin.](./media/oracle-cloud-infratstructure-console-provisioning-tutorial/identity.png "Admin")
+	![Screenshot shows the Oracle Admin console for identity management.](./media/oracle-cloud-infratstructure-console-provisioning-tutorial/identity.png "Admin")
 
 1. Select the URL displayed on the page beside Oracle Identity Cloud Service Console.
 1. Select **Add Identity Provider** to create a new identity provider. Save the IdP ID to be used as a part of tenant URL. Select the plus icon beside the **Applications** tab to create an OAuth Client and Grant IDCS Identity Domain Administrator AppRole.
 
-	![Screenshot shows the Oracle Cloud Icon.](./media/oracle-cloud-infratstructure-console-provisioning-tutorial/add.png "Icon")
+	![Screenshot shows the Oracle Cloud Icon for adding applications.](./media/oracle-cloud-infratstructure-console-provisioning-tutorial/add.png "Icon")
 
 1. Follow the screenshots below to configure your application. When the configuration is done, select **Save**.
 
@@ -106,11 +106,11 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
-1. In the **Tenant URL** field, enter your Cybozu Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Cybozu. If the connection fails, ensure your Cybozu account has the required admin permissions and try again.
+1. In the **Tenant URL** field, enter your Oracle Cloud Infrastructure Console Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Oracle Cloud Infrastructure Console. If the connection fails, ensure your Oracle Cloud Infrastructure Console account has the required admin permissions and try again.
 
     > [!NOTE]
     > Enter `https://<IdP ID>.identity.oraclecloud.com/admin/v1` in the **Tenant URL**.
-    > Example : If your IdP ID is `idcs-0bfd023ff2xx4a98a760fa2c31k92b1d`, then you would enter `https://idcs-0bfd023ff2xx4a98a760fa2c31k92b1d.identity.oraclecloud.com/admin/v1` in the **Tenant URL**.
+    > Example: If your IdP ID is `idcs-0bfd023ff2xx4a98a760fa2c31k92b1d`, then you would enter `https://idcs-0bfd023ff2xx4a98a760fa2c31k92b1d.identity.oraclecloud.com/admin/v1` in the **Tenant URL**.
 
 	![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
@@ -124,7 +124,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **Attribute Mapping** in the left panel and select **users**.
 
-1. Review the user attributes that are synchronized from Microsoft Entra ID to Cybozu in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Cybozu for update operations. If you choose to change the [matching target attribute](~/identity/app-provisioning/customize-application-attributes.md), you need to ensure that the Cybozu API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
+1. Review the user attributes that are synchronized from Microsoft Entra ID to Oracle Cloud Infrastructure Console in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Oracle Cloud Infrastructure Console for update operations. If you choose to change the [matching target attribute](~/identity/app-provisioning/customize-application-attributes.md), you need to ensure that the Oracle Cloud Infrastructure Console API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
 
     |Attribute|Type|
     |---|---|
@@ -171,7 +171,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Use [on-demand provisioning](~/identity/app-provisioning/provision-on-demand.md) to validate sync with a small number of users before deploying more broadly in your organization.
 
-1. When you're ready to provision, select **Start Provisioning** from the **Overview** page. 
+1. When you're ready to provision, select **Start Provisioning** from the **Overview** page.
 
 ## Step 6: Monitor your deployment
 Once you've configured provisioning, use the following resources to monitor your deployment:
