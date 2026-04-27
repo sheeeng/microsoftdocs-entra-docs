@@ -110,7 +110,7 @@ You can protect any custom JSON-based LLM or GenAI app by configuring a custom t
 
 - Prompt Injection Protection currently supports only text prompts. It doesn't support files.
 - Prompt Injection Protection supports only JSON-based generative AI apps.
-- Prompt Injection Protection supports prompts up to 64k characters. Anything longer is truncated.
+- Prompt Injection Protection supports prompts up to 64,000 characters. Anything longer is truncated.
 
 ## Related content
 
