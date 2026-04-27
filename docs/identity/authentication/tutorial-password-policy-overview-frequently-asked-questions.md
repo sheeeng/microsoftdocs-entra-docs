@@ -89,7 +89,7 @@ Password expiration in Microsoft Entra ID can be changed using the Microsoft 365
 
    If you want to configure a password expiration, clear the checkbox.
 
-   :::image type="content" border="true" source="media/tutorial-password-policy-overview-frequently-asked-questions/password-expiration-uncheck.png" alt-text="Screenshot of password set to expire." source="media/tutorial-password-policy-overview-frequently-asked-questions/password-expiration-uncheck.png":::
+   :::image type="content" border="true" source="media/tutorial-password-policy-overview-frequently-asked-questions/password-expiration-uncheck.png" alt-text="Screenshot of password set to expire." lightbox="media/tutorial-password-policy-overview-frequently-asked-questions/password-expiration-uncheck.png":::
 
 > [!Tip]
 > Even in environments where the password expiration is set to 90 days using the above setting, there may be scenarios where you want to set the password to never expire for only specific users, such as system accounts.
