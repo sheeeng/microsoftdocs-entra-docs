@@ -25,7 +25,7 @@ For example, by changing the minimum password length, you can reduce the require
 :::image type="content" border="true" source="media/tutorial-password-policy-overview-frequently-asked-questions/password-length.png" alt-text="Screenshot of a password policy.":::
 
 If the password writeback option in Microsoft Entra Connect is enabled, synced users can change or reset their passwords directly from Microsoft Entra ID.
-In this case, the password is evaluated by Microsoft Entra ID before the on-premises AD DS password policy is applied, which prevents users from setting easily guessable passwords.
+In this case, Microsoft Entra ID evaluates the password before the on-premises AD DS password policy applies. This process prevents users from setting easily guessable passwords.
 Depending on the environment, synced users might also be subject to Microsoft Entra ID restrictions such as the global banned password list. For more information, see the [FAQ section](#faq).
 
 ### Cloud-only users
@@ -48,7 +48,7 @@ When considering password expiration, it's helpful to look not only at whether t
 Each scenario is described in the next sections. Refer to the section that matches the user type and environment you want to review
 
 ### Synced users with password hash synchronization
-It's sometimes misunderstood that the on-premises AD DS password expiration is directly synchronized to Microsoft Entra ID.
+Some administrators think the on-premises AD DS password expiration syncs directly to Microsoft Entra ID.
 However, password expiration values for synced users are stored separately in on-premises AD DS and in Microsoft Entra ID.
 Because password information exists in both environments, the applied expiration policy depends on where the user signs in (where authentication occurs).
 For example:
@@ -57,7 +57,7 @@ For example:
 - When signing in to the Azure portal or Microsoft 365, the Microsoft Entra ID password expiration policy applies.
 
 When the on-premises AD DS password expires, the user is prompted to change the password during the next on-premises sign-in.
-After the password is changed, it's synchronized to Microsoft Entra ID, allowing the user to sign in to Microsoft Entra ID with the new password.
+After the password changes, Microsoft Entra ID synchronizes it. The user can then sign in with the new password.
 By default, for password hash–synchronized users, the Microsoft Entra ID password expiration is set to never expire.
 As a result, even after the on-premises AD DS password expires, users can still sign in to Microsoft Entra ID using the expired password.
 If you don't want users to sign in to Microsoft Entra ID with an expired on-premises password, enable the
@@ -104,7 +104,7 @@ If the guest user uses a Microsoft account such as user@outlook.com, the passwor
 
 ### In a password hash synchronization environment, users can still access Microsoft Entra ID with their old password after the on-premises AD DS password has expired. Can the Microsoft Entra ID password expiration for synced users be changed from "never expire"?
 
-Yes. This can be configured by enabling the `CloudPasswordPolicyForPasswordSyncedUsersEnabled` option at the tenant level.
+Yes. You can configure this behavior by enabling the CloudPasswordPolicyForPasswordSyncedUsersEnabled option at the tenant level.
 To allow users to change their passwords from Microsoft Entra ID, password writeback must also be enabled in Microsoft Entra Connect.
 By running the following commands, you can enable password expiration for synced users in Microsoft Entra ID.
 
@@ -157,7 +157,7 @@ You can sign in to the device and reach the Windows desktop even if the password
 You are prompted to change your password when signing in to Microsoft Entra ID–integrated cloud resources such as the Azure portal, Microsoft 365 admin center, or Exchange Online.
 
 ###  Is there a way to check the password expiration date for individual users rather than the tenant-wide setting?
-There is no simple way to check this in the Azure portal.
+There's no simple way to check this in the Azure portal.
 You must calculate it using values obtained from PowerShell.
 To check the tenant password expiration policy:
 
@@ -200,7 +200,7 @@ No. These terms represent different actions.
 Password change refers to a scenario where the user changes their password to a new one when they already know their current password.
 When performing a password change, the user is required to enter their current (old) password. For example, the prompt shown below is also considered a password change. In addition, even if the password has not yet expired, the user can explicitly change their password from the **My Account** page.
 
-On the other hand, a password reset doesn't necessarily require the user to know their current password. While a password reset can still be performed even if the user knows the password, it's most commonly used in scenarios where the password is unknown or has been forgotten. (There are also scenarios where a password reset is required as a response to detected risks or security events.)
+On the other hand, a password reset doesn't necessarily require the user to know their current password. Users can reset a password even if they know the current password. However, password reset is most common when the password is unknown or forgotten. (There are also scenarios where a password reset is required as a response to detected risks or security events.)
 When a user performs a password reset by themselves, the following **Recover your account** screen is displayed.
 
 :::image type="content" border="true" source="media/tutorial-password-policy-overview-frequently-asked-questions/self-service-password-reset-screen.png" alt-text="Screenshot of self-service password reset.":::
