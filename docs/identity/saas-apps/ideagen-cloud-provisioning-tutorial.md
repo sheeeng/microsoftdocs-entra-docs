@@ -128,7 +128,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
    |externalId|String||&check;|
 
 	>[!NOTE]
-	>All the required fields (for example, first name, last name and email) are required to be filled in Microsoft Entra ID in order get the auto provision work without any issue. 
+	>All the required fields (for example, first name, last name and email) are required to be filled in Microsoft Entra ID in order to get the auto provision work without any issue. 
 
 1. To configure scoping filters, refer to the instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 

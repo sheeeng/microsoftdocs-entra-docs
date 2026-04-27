@@ -82,7 +82,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select **+ New configuration**.
 
-	![Screenshot of Provisioning tab automatic](common/application-provisioning.png)
+	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
 1. In the **Tenant URL** field, enter your Humbol Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Humbol. If the connection fails, ensure your Humbol account has the required admin permissions and try again.
 
