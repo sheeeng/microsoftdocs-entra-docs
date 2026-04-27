@@ -50,7 +50,7 @@ The following table contains a list of currently billable actions for **guest us
 
 
 > [!TIP]
-> You can use the EIG Guest Usage Monitoring Workbook to understand the guest usage trend within your tenant. This report shows past usage that would have been billed. Future usage may differ.
+> You can use the [EIG Guest Usage Monitoring Workbook](https://entra.microsoft.com/#blade/AppInsightsExtension/UsageNotebookBlade/ComponentId/Azure%20Active%20Directory/ResourceIds/%5B%22%2Fsubscriptions%2Fab48f397-fc82-4634-aa52-62dd91b3ebaa%2Fresourcegroups%2Fwoodgrove-rg%2Fproviders%2Fmicrosoft.operationalinsights%2Fworkspaces%2Fwoodgrove-loganalyiticsworkspace%22%5D/GalleryResourceType/microsoft.aadiam%2Ftenant) to understand the guest usage trend within your tenant. This report shows past usage that would have been billed. Future usage may differ.
 
 ## Guest billing in multitenant organizations
 
