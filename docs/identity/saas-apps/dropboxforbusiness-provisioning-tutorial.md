@@ -14,7 +14,7 @@ ms.custom: sfi-image-nochange
 The objective of this article is to demonstrate the steps to be performed in Dropbox for Business and Microsoft Entra ID to configure Microsoft Entra ID to automatically provision and de-provision users and/or groups to Dropbox for Business.
 
 > [!IMPORTANT]
-> In the future, Microsoft and Dropbox is deprecating the old Dropbox integration. This was originally planned for 4/1/2021, but has been postponed indefinitely. However, to avoid disruption of service, we recommend migrating to the new SCIM 2.0 Dropbox integration which supports Groups. To migrate to the new Dropbox integration, add and configure a new instance of Dropbox for Provisioning in your Microsoft Entra tenant using the steps below. Once you have configured the new Dropbox integration, disable Provisioning on the old Dropbox integration to avoid Provisioning conflicts. For more detailed steps on migrating to the new Dropbox integration, see [Update to the newest Dropbox for Business application using Microsoft Entra ID](https://help.dropbox.com/installs-integrations/third-party/update-dropbox-azure-ad-connector) and [Connect Dropbox with Microsoft Entra ID](https://help.dropbox.com/integrations/microsoft-entra-id).
+> In the future, Microsoft and Dropbox are deprecating the old Dropbox integration. This was originally planned for 4/1/2021, but has been postponed indefinitely. However, to avoid disruption of service, we recommend migrating to the new SCIM 2.0 Dropbox integration which supports Groups. To migrate to the new Dropbox integration, add and configure a new instance of Dropbox for Provisioning in your Microsoft Entra tenant using the steps below. Once you have configured the new Dropbox integration, disable Provisioning on the old Dropbox integration to avoid Provisioning conflicts. For more detailed steps on migrating to the new Dropbox integration, see [Update to the newest Dropbox for Business application using Microsoft Entra ID](https://help.dropbox.com/installs-integrations/third-party/update-dropbox-azure-ad-connector) and [Connect Dropbox with Microsoft Entra ID](https://help.dropbox.com/integrations/microsoft-entra-id).
 
 > [!NOTE]
 > This article describes a connector built on top of the Microsoft Entra user provisioning service. For important details on what this service does, how it works, and frequently asked questions, see [Automate user provisioning and deprovisioning to SaaS applications with Microsoft Entra ID](~/identity/app-provisioning/user-provisioning.md).
@@ -37,7 +37,7 @@ Before configuring Dropbox for Business for automatic user provisioning with Mic
 1. Browse to **Entra ID** > **Enterprise apps** > **New application**.
 1. In the **Add from the gallery** section, type **Dropbox for Business**, select **Dropbox for Business** in the search box.
 1. Select **Dropbox for Business** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
-	![Screenshot of Dropbox for Business in the results list](common/search-new-app.png)
+	![Screenshot of Dropbox for Business in the results list.](common/search-new-app.png)
 
 ## Assigning users to Dropbox for Business
 
@@ -67,7 +67,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **Enterprise apps**
 
-	![Screenshot of Enterprise applications blade](common/enterprise-applications.png)
+	![Screenshot of Enterprise applications blade.](common/enterprise-applications.png)
 
 1. In the applications list, select **Dropbox for Business**.
 
@@ -87,11 +87,11 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. On the **Sign-in to Dropbox for Business to link with Microsoft Entra ID** dialog, sign in to your Dropbox for Business tenant and verify your identity.
 
-	![Screenshot of Dropbox for Business sign-in](media/dropboxforbusiness-provisioning-tutorial/dropbox01.png)
+	![Screenshot of Dropbox for Business sign-in.](media/dropboxforbusiness-provisioning-tutorial/dropbox01.png)
 
 1. Select **Test Connection** to ensure Microsoft Entra ID can connect to Dropbox for Business. If the connection fails, ensure your Dropbox for Business account has Admin permissions and try again.
 
-	![Screenshot of Token](common/provisioning-testconnection-oauth.png)
+	![Screenshot of Token.](common/provisioning-testconnection-oauth.png)
 
 1. Select **Create** to create your configuration.
 
@@ -107,13 +107,13 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Review the user attributes that are synchronized from Microsoft Entra ID to Dropbox in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Dropbox for update operations. Select the **Save** button to commit any changes.
 
-	![Screenshot of Dropbox User Attributes](media/dropboxforbusiness-provisioning-tutorial/dropbox-user-attributes.png)
+	![Screenshot of Dropbox User Attributes.](media/dropboxforbusiness-provisioning-tutorial/dropbox-user-attributes.png)
 
 1. Select **Attribute Mapping** in the left panel and select **Groups**.
 
 1. Review the group attributes that are synchronized from Microsoft Entra ID to Dropbox in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the groups in Dropbox for update operations. Select the **Save** button to commit any changes.
 
-	![Screenshot of Dropbox Group Attributes](media/dropboxforbusiness-provisioning-tutorial/dropbox-group-attributes.png)
+	![Screenshot of Dropbox Group Attributes.](media/dropboxforbusiness-provisioning-tutorial/dropbox-group-attributes.png)
 
 1. To configure scoping filters, refer to the instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
