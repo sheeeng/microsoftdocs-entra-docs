@@ -46,7 +46,7 @@ The scenario outlined in this article assumes that you already have the followin
 
 1. log into your [directprint.io account](https://directprint.io/login/).
 1. Navigate to the Microsoft Entra SSO and Provisioning screen.
-1. Save the Tenant URL and secret toke for future reference. You need it in **Step 5**.
+1. Save the Tenant URL and secret token for future reference. You need it in **Step 5**.
 
 ## Step 3: Add directprint.io from the Microsoft Entra application gallery
 
@@ -67,19 +67,19 @@ This section guides you through the steps to configure the Microsoft Entra provi
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **Enterprise apps**
 
-	![Screenshot of Enterprise applications blade](common/enterprise-applications.png)
+	![Screenshot of Enterprise applications blade.](common/enterprise-applications.png)
 
 1. In the applications list, select **directprint.io**.
 
-	![Screenshot of The directprint.io link in the Applications list](common/all-applications.png)
+	![Screenshot of The directprint.io link in the Applications list.](common/all-applications.png)
 
 1. Select the **Provisioning** tab.
 
-	![Screenshot of Provisioning tab](common/provisioning.png)
+	![Screenshot of Provisioning tab.](common/provisioning.png)
 
 1. Select **+ New configuration**.
 
-	![Screenshot of Provisioning tab automatic](common/application-provisioning.png)
+	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
 1. In the **Tenant URL** field, input your directprint Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to directprint. If the connection fails, ensure your directprint account has the required admin permissions and try again.
 
