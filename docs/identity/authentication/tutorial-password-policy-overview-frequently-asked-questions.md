@@ -29,10 +29,10 @@ In this case, the password is evaluated by Microsoft Entra ID before the on-prem
 Depending on the environment, synced users might also be subject to Microsoft Entra ID restrictions such as the global banned password list. For more information, see the [FAQ section](#faq).
 
 ### Cloud-only users
-For cloud users, the Microsoft Entra ID password policy cannot be customized, except for password expiration.
+For cloud users, the Microsoft Entra ID password policy can't be customized, except for password expiration.
 For detailed information about the Entra ID password policy, see [Microsoft Entra password policies](/entra/identity/authentication/concept-sspr-policy?tabs=ms-powershell#microsoft-entra-password-policies).
 Although Microsoft Entra ID doesn't provide the same granular password complexity settings as on-premises AD DS, it does include a global banned password list and a custom banned password list.
-The global banned password list is enabled for all tenants and cannot be disabled.
+The global banned password list is enabled for all tenants and can't be disabled.
 It blocks weak passwords such as admin or baseball.
 The custom banned password list allows organizations to register words such as the company name or abbreviations and prevent them from being used in passwords.
 For details, see [Global banned password list](/entra/identity/authentication/concept-password-ban-bad#global-banned-password-list).
@@ -44,11 +44,11 @@ If you need to confirm which password policies apply to a guest user, contact th
 ## Policies evaluated during authentication (password expiration)
 Password expiration specifies the maximum number of days a single password can be used.
 When the expiration date is reached, users are required to change their password the next time they sign in. 
-When considering password expiration, it is helpful to look not only at whether the user is a synced user or a cloud user, but also whether authentication occurs on-premises or in the cloud.
+When considering password expiration, it's helpful to look not only at whether the user is a synced user or a cloud user, but also whether authentication occurs on-premises or in the cloud.
 Each scenario is described in the next sections. Refer to the section that matches the user type and environment you want to review
 
 ### Synced users with password hash synchronization
-It is sometimes misunderstood that the on-premises AD DS password expiration is directly synchronized to Microsoft Entra ID.
+It's sometimes misunderstood that the on-premises AD DS password expiration is directly synchronized to Microsoft Entra ID.
 However, password expiration values for synced users are stored separately in on-premises AD DS and in Microsoft Entra ID.
 Because password information exists in both environments, the applied expiration policy depends on where the user signs in (where authentication occurs).
 For example:
@@ -61,7 +61,7 @@ After the password is changed, it's synchronized to Microsoft Entra ID, allowing
 By default, for password hash–synchronized users, the Microsoft Entra ID password expiration is set to never expire.
 As a result, even after the on-premises AD DS password expires, users can still sign in to Microsoft Entra ID using the expired password.
 If you don't want users to sign in to Microsoft Entra ID with an expired on-premises password, enable the
-`CloudPasswordPolicyForPasswordSyncedUsersEnabled` option so that Microsoft Entra ID does not treat passwords as non-expiring.
+`CloudPasswordPolicyForPasswordSyncedUsersEnabled` option so that Microsoft Entra ID doesn't treat passwords as non-expiring.
 
 ### Synced users who authenticated on-premises (pass-through authentication or AD FS)
 When using pass-through authentication or Active Directory Federation Services (AD FS), authentication for Azure portal and Microsoft 365 sign-ins is performed in on-premises AD DS, not in Microsoft Entra ID.
@@ -97,7 +97,7 @@ Password expiration in Microsoft Entra ID can be changed using the Microsoft 365
 
 ### Guest users
 Password expiration for guest users is managed by the organization in the guest’s home tenant.
-The resource tenant that invited the guest does not manage this setting.
+The resource tenant that invited the guest doesn't manage this setting.
 If the guest user uses a Microsoft account such as user@outlook.com, the password policy defined by that service applies.
 
 ## FAQ
@@ -117,7 +117,7 @@ Update-MgDirectoryOnPremiseSynchronization `
 
 > [!Warning]
 > Password expiration values for synced users aren't synchronized from on-premises AD DS to Microsoft Entra ID. After enabling this feature, the on-premises password policy applies when signing in on-premises, and the Microsoft Entra ID password policy applies when authentication occurs in Microsoft Entra ID. As a result, the applicable password expiration policy depends on where the user signs in.
-> If different expiration periods are configured (for example, 30 days on-premises and 90 days in Microsoft Entra ID), it can become difficult for users to determine when their password will expire. For this reason, it is recommended to configure the same expiration period for both on-premises AD DS and Microsoft Entra ID.
+> If different expiration periods are configured (for example, 30 days on-premises and 90 days in Microsoft Entra ID), it can become difficult for users to determine when their password will expire. For this reason, it's recommended to configure the same expiration period for both on-premises AD DS and Microsoft Entra ID.
 For example, if both environments require a password change after 90 days, the password will expire at roughly the same time.
 > When a password is changed either on-premises or in Microsoft Entra ID, the change is synchronized through password hash synchronization and password writeback, and the expiration timer is reset.
 
@@ -148,7 +148,7 @@ Filter by the Set password policy activity and review the user listed as the Ini
 ### When running Get-MgDomain in PowerShell, the password expiration shows 2147483647 days. What does this mean?
 This value indicates that the password expiration for the domain is set to never expire.
 
-### I edited the password policy in the Microsoft 365 admin center or via PowerShell, but I do not receive expiration notifications.
+### I edited the password policy in the Microsoft 365 admin center or via PowerShell, but I don't receive expiration notifications.
 Previously, notifications were displayed using a bell icon in the Microsoft 365 portal.
 However, this notification feature has been retired, and “password about to expire” notifications are no longer sent.
 
@@ -200,7 +200,7 @@ No. These terms represent different actions.
 Password change refers to a scenario where the user changes their password to a new one when they already know their current password.
 When performing a password change, the user is required to enter their current (old) password. For example, the prompt shown below is also considered a password change. In addition, even if the password has not yet expired, the user can explicitly change their password from the **My Account** page.
 
-On the other hand, a password reset does not necessarily require the user to know their current password. While a password reset can still be performed even if the user knows the password, it is most commonly used in scenarios where the password is unknown or has been forgotten. (There are also scenarios where a password reset is required as a response to detected risks or security events.)
+On the other hand, a password reset doesn't necessarily require the user to know their current password. While a password reset can still be performed even if the user knows the password, it's most commonly used in scenarios where the password is unknown or has been forgotten. (There are also scenarios where a password reset is required as a response to detected risks or security events.)
 When a user performs a password reset by themselves, the following **Recover your account** screen is displayed.
 
 :::image type="content" border="true" source="media/tutorial-password-policy-overview-frequently-asked-questions/self-service-password-reset-screen.png" alt-text="Screenshot of self-service password reset.":::
@@ -218,7 +218,7 @@ They are evaluated during password change and password reset operations.
 Depending on the password evaluation results described in [How are passwords evaluated](/entra/identity/authentication/concept-password-ban-bad#how-are-passwords-evaluated), a password containing a custom banned word might still be accepted in some cases.
 
 ### When synced users change their password from Microsoft Entra ID, the screen always shows "Please wait a few minutes." Why?
-This occurs when the password meets the on-premises AD password policy but does not meet the Entra ID password policy.
+This occurs when the password meets the on-premises AD password policy but doesn't meet the Entra ID password policy.
 For example, this can happen if:
 * The on-premises minimum password length is seven characters or fewer
 * Password complexity is disabled on-premises
