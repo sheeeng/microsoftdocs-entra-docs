@@ -44,7 +44,7 @@ Before configuring Druva for automatic user provisioning with Microsoft Entra ID
 
 1. Sign in to your [Druva Admin Console](https://console.druva.com). Navigate to **Druva** > **inSync**.
 
-    ![Screenshot of Druva Admin Console](media/druva-provisioning-tutorial/menubar.png)
+    ![Screenshot of Druva Admin Console.](media/druva-provisioning-tutorial/menubar.png)
 
 1. Navigate to **Manage** > **Deployments** > **Users**.
 
@@ -68,7 +68,7 @@ To configure Druva for automatic user provisioning with Microsoft Entra ID, you 
 1. Browse to **Entra ID** > **Enterprise apps** > **New application**.
 1. In the **Add from the gallery** section, type **Druva**, select **Druva** in the search box.
 1. Select **Druva** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
-    ![Screenshot of Druva in the results list](common/search-new-app.png)
+    ![Screenshot of Druva in the results list.](common/search-new-app.png)
 
 ## Configuring automatic user provisioning to Druva 
 
@@ -84,11 +84,11 @@ This section guides you through the steps to configure the Microsoft Entra provi
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **Enterprise apps**
 
-    ![Screenshot of Enterprise applications blade](common/enterprise-applications.png)
+    ![Screenshot of Enterprise applications blade.](common/enterprise-applications.png)
 
 1. In the applications list, select **Druva**.
 
-    ![Screenshot of The Druva link in the Applications list](common/all-applications.png)
+    ![Screenshot of The Druva link in the Applications list.](common/all-applications.png)
 
 1. Select the **Provisioning** tab.
 
@@ -116,7 +116,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Review the user attributes that are synchronized from Microsoft Entra ID to Druva in the **Attribute Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Druva for update operations. Select the **Save** button to commit any changes.
 
-    ![Screenshot of Druva User Attributes](media/druva-provisioning-tutorial/userattribute.png)
+    ![Screenshot of Druva User Attributes.](media/druva-provisioning-tutorial/userattribute.png)
 
 1. To configure scoping filters, refer to the instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
