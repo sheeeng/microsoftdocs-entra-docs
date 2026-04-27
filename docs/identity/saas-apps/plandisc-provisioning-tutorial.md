@@ -39,16 +39,16 @@ The scenario outlined in this article assumes that you already have the followin
 
 ## Step 2: Configure Plandisc to support provisioning with Microsoft Entra ID
 
-1. Log in to [Plandisc](https://create.plandisc.com) and navigate to **Enterprise**
+1. Sign in to [Plandisc](https://create.plandisc.com) and navigate to **Enterprise**
 
-	![Screenshot of Plandisc navigate Enterprise](media/plandisc-provisioning-tutorial/get-scim-token-from-plandisc-step-1.png)
+	![Screenshot of Plandisc navigate Enterprise.](media/plandisc-provisioning-tutorial/get-scim-token-from-plandisc-step-1.png)
 
 1. Scroll down to see section **Manage users with SCIM** section.
 Here you find values to be entered in the Provisioning tab of your Plandisc application. 
 The **SCIM endpoint** is inserted into the Tenant URL field.
 The **SCIM token** is inserted into the Secret Token field.
 
-	![Screenshot of Copy SCIM token from Plandisc](media/plandisc-provisioning-tutorial/get-scim-token-from-plandisc-step-2.png)
+   ![Screenshot of Copy SCIM token from Plandisc.](media/plandisc-provisioning-tutorial/get-scim-token-from-plandisc-step-2.png)
 
 <a name='step-3-add-plandisc-from-the-azure-ad-application-gallery'></a>
 
@@ -79,13 +79,13 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the **Provisioning** tab.
 
-	![Screenshot of Provisioning tab](common/provisioning.png)
+	![Screenshot of the Provisioning tab for configuring automatic user provisioning.](common/provisioning.png)
 
-1. Set **+ New configuration**.
+1. Select **+ New configuration**.
 
 	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
-1. In the **Tenant URL** field, input your Recnice Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Recnice. If the connection fails, ensure your Recnice account has the required admin permissions and try again.
+1. In the **Tenant URL** field, enter your Plandisc Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Plandisc. If the connection fails, ensure your Plandisc account has the required admin permissions and try again.
 
 	![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
@@ -95,9 +95,9 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the pencil to edit the properties. Enable notification emails and provide an email to receive quarantine emails. Enable accidental deletions prevention. Select **Apply** to save the changes.
 
-	![Screenshot of Provisioning properties.](common/provisioning-properties.png)
+	![Screenshot of the Provisioning properties page showing notification and deletion settings.](common/provisioning-properties.png)
 
-1. Select **Attribute Mapping** in the left panel and select users.
+1. Select **Attribute Mapping** in the left panel and select **users**.
 
 1. Review the user attributes that are synchronized from Microsoft Entra ID to Plandisc in the **Attribute-Mapping** section. The attributes selected as **Matching** properties are used to match the user accounts in Plandisc for update operations. If you choose to change the [matching target attribute](~/identity/app-provisioning/customize-application-attributes.md), you need to ensure that the Plandisc API supports filtering users based on that attribute. Select the **Save** button to commit any changes.
 
@@ -110,7 +110,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
    |externalId|String||&check;
    |preferredLanguage|String|
 
-1. To configure scoping filters, refer to the following instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md) article.
+1. To configure scoping filters, refer to the following instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
 1. Use [on-demand provisioning](~/identity/app-provisioning/provision-on-demand.md) to validate sync with a small number of users before deploying more broadly in your organization.
 

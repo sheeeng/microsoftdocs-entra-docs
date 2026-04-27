@@ -55,11 +55,11 @@ This section guides you through connecting your Microsoft Entra ID to the Pingbo
 
 1. Select your instance of Pingboard, and then select the **Provisioning** tab.
 
-1. Set **+ New configuration**.
+1. Select **+ New configuration**.
 
 	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
-1. In the **Tenant URL** field, input your Recnice Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Recnice. If the connection fails, ensure your Recnice account has the required admin permissions and try again.
+1. In the **Tenant URL** field, enter your Pingboard Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Pingboard. If the connection fails, ensure your Pingboard account has the required admin permissions and try again.
 
     ![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
@@ -69,13 +69,13 @@ This section guides you through connecting your Microsoft Entra ID to the Pingbo
 
 1. Select the pencil to edit the properties. Enable notification emails and provide an email to receive quarantine emails. Enable accidental deletions prevention. Select **Apply** to save the changes.
 
-    ![Screenshot of Provisioning properties.](common/provisioning-properties.png)
+    ![Screenshot of the Provisioning properties page showing notification and deletion settings.](common/provisioning-properties.png)
 
-1. Select **Attribute Mapping** in the left panel and select users.
+1. Select **Attribute Mapping** in the left panel and select **users**.
 
 1. In the **Attribute Mappings** section, review the user attributes to be synchronized from Microsoft Entra ID to Pingboard. The attributes selected as **Matching** properties are used to match the user accounts in Pingboard for update operations. Select **Save** to commit any changes. For more information, see [Customize user provisioning attribute mappings](~/identity/app-provisioning/customize-application-attributes.md).
 
-1. To configure scoping filters, refer to the following instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md) article.
+1. To configure scoping filters, refer to the following instructions provided in the [Scoping filter article](~/identity/app-provisioning/define-conditional-rules-for-provisioning-user-accounts.md).
 
 1. Use [on-demand provisioning](~/identity/app-provisioning/provision-on-demand.md) to validate sync with a small number of users before deploying more broadly in your organization.
 
