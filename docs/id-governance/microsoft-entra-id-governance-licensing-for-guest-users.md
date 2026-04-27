@@ -49,6 +49,9 @@ The following table contains a list of currently billable actions for **guest us
 | Access Reviews    | [Access Review – inactive users](../identity/users/clean-up-stale-guest-accounts.md#monitor-guest-accounts-at-scale-with-inactive-guest-insights) | Bill when guest user is included in review.<br><br>**API**<br> https://graph.microsoft.com/v1.0/identityGovernance/accessReviews/definitions where inactive guest reviews are included in the policy for a group resource.  | Decision item summary.  |
 
 
+> [!TIP]
+> You can use the EIG Guest Usage Monitoring Workbook to understand the guest usage trend within your tenant. This report shows past usage that would have been billed. Future usage may differ.
+
 ## Guest billing in multitenant organizations
 
 Governance guest billing only applies for users with a userType of **guest**, so if Microsoft Entra ID Governance licensed member users are brought into other organization tenants with a userType of **member**, they won't accrue to the billing meter.
