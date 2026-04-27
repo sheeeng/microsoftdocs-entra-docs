@@ -156,7 +156,7 @@ Yes, there's no free tier for governance billing. Governance guest billing appli
 
 **How can I estimate or understand my guest usage for Microsoft Entra ID Governance billing?**
 
-You can use the EIG Guest Usage Monitoring Workbook to understand the guest usage trend within your tenant. This report shows past usage that would have been billed, but future usage may differ. To provide feedback about the EIG Guest Usage Monitoring Workbook, visit this [form]((https://forms.office.com/r/N4dYnQcXTN)).
+You can use the EIG Guest Usage Monitoring Workbook to understand the guest usage trend within your tenant. This report shows past usage that would have been billed, but future usage may differ. To provide feedback about the EIG Guest Usage Monitoring Workbook, visit this [form](https://forms.office.com/r/N4dYnQcXTN).
 
 
 ## Guest Governance Features Unavailable Without the Microsoft Entra ID Governance for Guests Add-on 
