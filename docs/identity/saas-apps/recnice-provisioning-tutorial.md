@@ -96,7 +96,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the pencil to edit the properties. Enable notification emails and provide an email to receive quarantine emails. Enable accidental deletions prevention. Select **Apply** to save the changes.
 
-   ![Screenshot of Provisioning properties.](common/provisioning-properties.png)
+   ![Screenshot of the Provisioning properties.](common/provisioning-properties.png)
 
 1. Select **Attribute Mapping** in the left panel and select users.
 

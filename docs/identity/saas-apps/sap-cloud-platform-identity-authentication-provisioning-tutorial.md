@@ -46,7 +46,7 @@ If you're configuring provisioning into SAP Cloud Identity Services in a product
 
 ## Set up SAP Cloud Identity Services for provisioning
 
-In this article,  you add an admin system in SAP Cloud Identity Services and then configure Microsoft Entra.
+In this article, you add an admin system in SAP Cloud Identity Services and then configure Microsoft Entra.
 
 ![Screenshot of the architecture of SSO and provisioning flow between SAP applications, SAP Cloud Identity Services and Microsoft Entra.](./media/sap-cloud-platform-identity-authentication-provisioning-tutorial/architecture.png)
 
@@ -167,7 +167,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the pencil to edit the properties. Enable notification emails and provide an email to receive quarantine emails. Enable accidental deletions prevention. Select **Apply** to save the changes.
 
-   ![Screenshot of Provisioning properties.](common/provisioning-properties.png)
+   ![Screenshot of the Provisioning properties page showing notification and deletion settings.](common/provisioning-properties.png)
 
 1. Select **Attribute Mapping** in the left panel and select users.
 

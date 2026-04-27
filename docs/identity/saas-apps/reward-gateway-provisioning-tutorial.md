@@ -64,7 +64,8 @@ To configure Reward Gateway for automatic user provisioning with Microsoft Entra
 1. Browse to **Entra ID** > **Enterprise apps** > **New application**.
 1. In the **Add from the gallery** section, type **Reward Gateway**, select **Reward Gateway** in the search box.
 1. Select **Reward Gateway** from results panel and then add the app. Wait a few seconds while the app is added to your tenant.
-	![Screenshot of the Reward Gateway in the results list](common/search-new-app.png)
+
+	![Screenshot of the Reward Gateway in the results list.](common/search-new-app.png)
 
 ## Configuring automatic user provisioning to Reward Gateway  
 
@@ -80,11 +81,11 @@ This section guides you through the steps to configure the Microsoft Entra provi
 1. Sign in to the [Microsoft Entra admin center](https://entra.microsoft.com) as at least a [Cloud Application Administrator](~/identity/role-based-access-control/permissions-reference.md#cloud-application-administrator).
 1. Browse to **Entra ID** > **Enterprise apps**
 
-	![Screenshot of the Enterprise applications blade](common/enterprise-applications.png)
+	![Screenshot of the Enterprise applications blade.](common/enterprise-applications.png)
 
 1. In the applications list, select **Reward Gateway**.
 
-	![Screenshot of the Reward Gateway link in the Applications list](common/all-applications.png)
+	![Screenshot of the Reward Gateway link in the Applications list.](common/all-applications.png)
 
 1. Select the **Provisioning** tab.
 
@@ -104,7 +105,7 @@ This section guides you through the steps to configure the Microsoft Entra provi
 
 1. Select the pencil to edit the properties. Enable notification emails and provide an email to receive quarantine emails. Enable accidental deletions prevention. Select **Apply** to save the changes.
 
-	![Screenshot of Provisioning properties.](common/provisioning-properties.png)
+	![Screenshot of the Provisioning properties page showing notification and deletion settings.](common/provisioning-properties.png)
 
 1. Select **Attribute Mapping** in the left panel and select users.
 
