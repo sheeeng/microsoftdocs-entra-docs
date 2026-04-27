@@ -102,7 +102,7 @@ This section guides you through the steps to set up the Microsoft Entra provisio
 
 	![Screenshot of Provisioning tab automatic.](common/application-provisioning.png)
 
-1. In the **Tenant URL** field, input your Contentful Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Contentful. If the connection fails, ensure your Contentful account has the required admin permissions and try again.
+1. In the **Tenant URL** field, enter your Contentful Tenant URL and Secret Token. Select **Test Connection** to ensure Microsoft Entra ID can connect to Contentful. If the connection fails, ensure your Contentful account has the required admin permissions and try again.
 
    ![Screenshot of Provisioning test connection.](common/provisioning-test-connection.png)
 
