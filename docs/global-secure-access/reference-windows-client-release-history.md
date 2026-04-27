@@ -2,7 +2,7 @@
 title: Global Secure Access Client for Windows Release Notes
 description: This article tracks the changes in each released version of the Global Secure Access client for Windows.
 ms.topic: reference
-ms.date: 04/10/2026
+ms.date: 04/27/2026
 ms.author: jayrusso
 author: HULKsmashGithub
 ms.reviewer: lirazbarak
@@ -20,8 +20,8 @@ You can download the current version of the Global Secure Access client from the
 1. Select **Download Client**.
 :::image type="content" source="media/reference-windows-client-release-history/client-download-screen.png" alt-text="Screenshot of the client download screen with the Download Client button highlighted." lightbox="media/reference-windows-client-release-history/client-download-screen.png":::
 
-## Version 2.28.94
-Released for download on April 11, 2026.
+## Version 2.28.96
+Released for download on April 27, 2026.
 ### Functional changes
 - The **Sign Out** button shows by default only on Microsoft Entra-registered devices. For Microsoft Entra-joined devices, the option is hidden and you can show it by setting a registry key. For details, see [Hide or unhide system tray menu buttons](how-to-install-windows-client.md#hide-or-unhide-system-tray-menu-buttons).
 - The **Sign Out** button is now in the user interface in the account control in the main Global Secure Access client window. It's no longer available in the system tray menu.
