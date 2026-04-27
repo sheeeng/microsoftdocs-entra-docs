@@ -3,7 +3,7 @@ title: Customize the sign-in experience for your application with branding theme
 description: Learn how to create branding themes and apply them to the sign-in experience for your application in Microsoft Entra ID.
 author: rolyon
 ms.author: rolyon
-ms.date: 04/06/2026
+ms.date: 04/27/2026
 ms.reviewer: 
 ms.topic: how-to
 #Customer intent: As a developer integrating with Microsoft Entra ID, I want to customize the sign-in experience for my application.
