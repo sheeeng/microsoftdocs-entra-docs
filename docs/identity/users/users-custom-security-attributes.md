@@ -4,6 +4,7 @@ description: Assign, update, list, or remove custom security attributes for a us
 ms.date: 04/27/2026
 ms.topic: how-to
 ms.custom: it-pro, no-azure-ad-ps-ref, sfi-image-nochange
+ai-usage: ai-assisted
 ---
 
 # Assign, update, list, or remove custom security attributes for a user
@@ -568,7 +569,7 @@ The following example lists all users and any custom security attribute assignme
 [Get-MgUser](/powershell/module/microsoft.graph.users/get-mguser)
 
 ```powershell
-$userAttributes = Get-MgUser -CountVariable CountVar -Property "id,displayName,customSecurityAttributes" -ConsistencyLevel eventual
+$userAttributes = Get-MgUser -All -CountVariable CountVar -Property "id,displayName,customSecurityAttributes" -ConsistencyLevel eventual
 $userAttributes | select Id,DisplayName,CustomSecurityAttributes
 $userAttributes.CustomSecurityAttributes.AdditionalProperties | Format-List
 ```
@@ -576,11 +577,24 @@ $userAttributes.CustomSecurityAttributes.AdditionalProperties | Format-List
 ```Output
 Id                                   DisplayName CustomSecurityAttributes
 --                                   ----------- ------------------------
-00aa00aa-bb11-cc22-dd33-44ee44ee44ee Alain       Microsoft.Graph.PowerShell.Models.MicrosoftGraphCustomSecurityAttributeValue
+00aa00aa-bb11-cc22-dd33-44ee44ee44ee Alain
 11bb11bb-cc22-dd33-ee44-55ff55ff55ff Joe         Microsoft.Graph.PowerShell.Models.MicrosoftGraphCustomSecurityAttributeValue
 22cc22cc-dd33-ee44-ff55-66aa66aa66aa Isabella    Microsoft.Graph.PowerShell.Models.MicrosoftGraphCustomSecurityAttributeValue
 33dd33dd-ee44-ff55-aa66-77bb77bb77bb Jiya        Microsoft.Graph.PowerShell.Models.MicrosoftGraphCustomSecurityAttributeValue
-44ee44ee-ff55-aa66-bb77-88cc88cc88cc Admin       Microsoft.Graph.PowerShell.Models.MicrosoftGraphCustomSecurityAttributeValue
+44ee44ee-ff55-aa66-bb77-88cc88cc88cc Admin
+
+Key   : Engineering
+Value : {[@odata.type, #microsoft.graph.customSecurityAttributeValue], [Project@odata.type, #Collection(String)], [Project, System.Object[]],
+        [CostCenter@odata.type, #Collection(Int32)], [CostCenter, System.Object[]], [Certification, True]}
+
+Key   : Marketing
+Value : {[@odata.type, #microsoft.graph.customSecurityAttributeValue], [EmployeeId, QN26904]}
+
+Key   : Marketing
+Value : {[@odata.type, #microsoft.graph.customSecurityAttributeValue], [AppCountry@odata.type, #Collection(String)], [AppCountry, System.Object[]]}
+
+Key   : Engineering
+Value : {[@odata.type, #microsoft.graph.customSecurityAttributeValue], [ProjectDate, 2026-04-23]}
 ```
 
 # [Microsoft Graph](#tab/ms-graph)
@@ -591,6 +605,8 @@ Id                                   DisplayName CustomSecurityAttributes
 GET https://graph.microsoft.com/v1.0/users?$count=true&$select=id,displayName,customSecurityAttributes
 ConsistencyLevel: eventual
 ```
+
+If your tenant has more users than fit in a single page, the response includes an `@odata.nextLink` property. Follow that link to retrieve the next page of results. For more information, see [Paging Microsoft Graph data in your app](/graph/paging).
 
 ```http
 {
